@@ -20,3 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+myenv/
+*.sqlite3
+__pycache__/
