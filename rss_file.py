@@ -1,8 +1,10 @@
 import feedparser
 import json
 import re
+import requests # Nécessaire pour envoyer les données à la collègue
 
 feeds = {
+    
     "europe": "https://www.france24.com/fr/europe/rss",
     "afrique": "https://www.france24.com/fr/afrique/rss",
     "ameriques": "https://www.france24.com/fr/am%C3%A9riques/rss",
@@ -10,15 +12,18 @@ feeds = {
     "moyen_orient": "https://www.france24.com/fr/moyen-orient/rss",
 }
 
-def clean(text):
+def clean(text): 
     return re.sub(r"<.*?>", "", text or "").strip()
 
-articles = []
+articles = [] 
 
-for region, url in feeds.items():
+# --- ÉTAPE C1 : RÉCUPÉRATION ---
+for region, url in feeds.items(): 
+    print(f"Récupération : {region}...")
     feed = feedparser.parse(url)
-
-    for entry in feed.entries:
+    
+    # Correction de l'indentation ici pour parcourir TOUTES les régions
+    for entry in feed.entries:  
         articles.append({
             "region": region,
             "title": entry.get("title"),
@@ -27,10 +32,14 @@ for region, url in feeds.items():
             "url": entry.get("link"),
         })
 
-print("Total articles :", len(articles))
+print(f"Total articles récupérés : {len(articles)}")
 
-# Sauvegarde JSON
-with open("news.json", "w", encoding="utf-8") as f:
+# Sauvegarde locale (optionnel mais pratique pour débugger)
+with open("news.json", "w", encoding="utf-8") as f: 
     json.dump(articles, f, ensure_ascii=False, indent=2)
+print("news.json créé avec succès !")
 
-print("news.json créé ✅")
+# --- ÉTAPE C2 : ENVOI À LA COLLÈGUE ---
+print("Envoi des données à l'API de vectorisation...")
+
+
