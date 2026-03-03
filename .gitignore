@@ -24,3 +24,13 @@ TestResults.xml
 myenv/
 *.sqlite3
 __pycache__/
+
+# SSH / keys
+*.pem
+*.key
+id_ed25519
+id_ed25519.pub
+*.pub
+
+# erreurs possibles (fichiers clés commités par accident)
+ssh-keygen*
