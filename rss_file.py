@@ -34,12 +34,10 @@ for region, url in feeds.items():
 
 print(f"Total articles récupérés : {len(articles)}")
 
-# Sauvegarde locale (optionnel mais pratique pour débugger)
 with open("news.json", "w", encoding="utf-8") as f: 
     json.dump(articles, f, ensure_ascii=False, indent=2)
 print("news.json créé avec succès !")
 
-# --- ÉTAPE C2 : ENVOI À LA COLLÈGUE ---
 print("Envoi des données à l'API de vectorisation...")
 
 

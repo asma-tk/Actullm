@@ -1,6 +1,4 @@
 
 
 1 lancer 
-uvicorn Api_add_articles:app --reload --port 8001
-
-2 lancer  lancer python api_c1.py. pour envoiyer la requette a api c2 
+ docker-compose up --build
