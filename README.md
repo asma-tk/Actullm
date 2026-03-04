@@ -1,2 +1,4 @@
-# Actullm
-RAg
+
+
+1 lancer 
+ docker-compose up --build
