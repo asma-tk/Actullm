@@ -10,8 +10,7 @@ from defconn import connect_collection
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
-
-response = requests.get("http://localhost:8000/get_articles")
+response = requests.get("http://0.0.0.0:8001/get_articles")
 articles = response.json()
 
 documents = []
