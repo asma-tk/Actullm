@@ -24,18 +24,8 @@ html, body, [data-testid="stApp"], .main, .block-container {
     font-size: .82rem !important;
     line-height: 1.75 !important;
 }
-.stChatInput textarea {
-    border: 1.5px solid #dee2e6 !important;
-    border-radius: 12px !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: .85rem !important;
-}
-.stChatInput textarea:focus { border-color: #4f8ef7 !important; }
-[data-testid="stExpander"] {
-    background: #f8f9fa !important;
-    border: 1px solid #e9ecef !important;
-    border-radius: 8px !important;
-}
+
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -69,7 +59,7 @@ def ask_kevin(question):
 
 # ── UI ─────────────────────────────────────────────────────────
 st.title("📰 Ok Kévin, quoi de neuf ?")
-st.caption("RAG · France24 · ChromaDB · Mistral — *mode démo*")
+st.caption("posez votre question")
 st.divider()
 
 if "messages" not in st.session_state:

@@ -1,23 +1,23 @@
-from langchain.vectorstores import FAISS
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.chains import RetrievalQA
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.schema import Document
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.documents import Document
+from langchain_text_splitters import CharacterTextSplitter
+import chromadb
+from chromadb.config import Settings
 import requests
+from defconn import connect_collection
 
-embeddings = OpenAIEmbeddings()
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
-# Appeler l'API pour récupérer tous les articles
 response = requests.get("http://localhost:8000/get_articles")
-articles = response.json()  # liste de dicts
-
-#reccuperation des données 
+articles = response.json()
 
 documents = []
-
 for article in articles:
     doc = Document(
-        page_content=article["content"],
+        page_content=str(article["content"]),
         metadata={
             "title": article["title"],
             "date": article["date"],
@@ -27,24 +27,34 @@ for article in articles:
     )
     documents.append(doc)
 
-# Chunk (découpage)
 splitter = CharacterTextSplitter(
     chunk_size=500,
     chunk_overlap=50
 )
-
 chunked_docs = splitter.split_documents(documents)
 
-
-#vectorisation => embeddings 
 vectorstore = FAISS.from_documents(
     chunked_docs,
     embeddings
 )
 
-#retrieval
-retriever = vectorstore.as_retriever()
+collection = connect_collection()
 
-retriever = vectorstore.as_retriever(
-    search_kwargs={"k": 3} #récupérer les 3 chunks les plus pertinents.
+ids = []
+embeddings_list = []
+documents_list = []
+metadatas_list = []
+
+for i, chunk in enumerate(chunked_docs):
+    embedding = vectorstore.index.reconstruct(i).tolist()
+    ids.append(str(i))
+    embeddings_list.append(embedding)
+    documents_list.append(chunk.page_content)
+    metadatas_list.append(chunk.metadata)
+
+collection.add(
+    ids=ids,
+    embeddings=embeddings_list,
+    documents=documents_list,
+    metadatas=metadatas_list
 )
