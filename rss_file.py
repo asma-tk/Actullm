@@ -1,4 +1,4 @@
-import feedparser
+import feedparser  #rss_file.py
 import json
 import re
 import requests # Nécessaire pour envoyer les données à la collègue

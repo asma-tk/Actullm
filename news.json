@@ -1,6 +1,20 @@
 [
   {
     "region": "europe",
+    "title": "Guerre au Moyen-Orient : en frappant Chypre, \"l'Iran veut impliquer l'Europe\"",
+    "date": "Tue, 03 Mar 2026 17:54:42 GMT",
+    "content": "Plusieurs drones ont visé lundi la base militaire britannique d'Akrotiri, dans le sud de Chypre. Ces attaques, imputées au Hezbollah libanais allié de l'Iran, sont les premières contre un pays de l'UE depuis le début de la guerre au Moyen-Orient. Une stratégie pour inciter les États européens à s'impliquer dans le conflit, selon les spécialistes.",
+    "url": "https://www.france24.com/fr/europe/20260303-guerre-au-moyen-orient-en-frappant-chypre-iran-veut-impliquer-europe-ue-iran-liban-etats-unis-israel"
+  },
+  {
+    "region": "europe",
+    "title": "À Chypre, une base militaire britannique attaquée par un drone iranien",
+    "date": "Mon, 02 Mar 2026 15:45:03 GMT",
+    "content": "Une base aérienne britannique à Chypre a été frappée dans la nuit de dimanche à lundi par un drone iranien, puis ciblée par deux autres. L'attaque, survenue après que Londres a autorisé Washington à utiliser ses bases contre l'Iran, n’a fait ni victime ni dégâts majeurs, mais a entraîné des évacuations dans le sud de l'île.",
+    "url": "https://www.france24.com/fr/europe/20260302-%C3%A0-chypre-une-base-militaire-britannique-attaqu%C3%A9e-par-un-drone-iranien"
+  },
+  {
+    "region": "europe",
     "title": "Guerre au Moyen-Orient : Zelensky se \"préoccupe\" d'un manque de munitions si le conflit se poursuit",
     "date": "Mon, 02 Mar 2026 12:57:08 GMT",
     "content": "Le président ukrainien s'est dit, lundi, \"préoccupé\" d'un manque à venir de munitions pour ses systèmes de défense aérienne en cas de prolongation de la guerre au Moyen-Orient. Volodymyr Zelensky a affirmé être en contact avec \"ses partenaires\" américains et européens.",
@@ -10,7 +24,7 @@
     "region": "europe",
     "title": "Emmanuel Macron annonce que la France va augmenter le nombre de ses têtes nucléaires",
     "date": "Mon, 02 Mar 2026 02:59:13 GMT",
-    "content": "Le président français Emmanuel Macron a annoncé lundi, lors d'un discours depuis la base de l'Ile Longue, dans le Finistère, que la France entrait de façon \"progressive\" dans une nouvelle étape de sa dissuasion nucléaire, qu'il a qualifiée de \"dissuasion avancée\". Il a précisé que le nombre de têtes nucléaires allait être augmenté.",
+    "content": "Le président français Emmanuel Macron a annoncé lundi, lors d'un discours depuis la base de l'Ile Longue, dans le Finistère, que la France allait augmenter le nombre de ses têtes nucléaires et les alliés européens pourront \"participer aux exercices\" de dissuasion française. Il a aussi évoqué un \"embrasement possible à nos frontières\" après la guerre qui secoue tout le Moyen-Orient.",
     "url": "https://www.france24.com/fr/europe/20260302-dissuasion-nucl%C3%A9aire-macron-va-prendre-la-parole-dans-un-discours-tr%C3%A8s-attendu"
   },
   {
@@ -196,18 +210,11 @@
     "url": "https://www.france24.com/fr/europe/20260223-affaire-epstein-l-ancien-ambassadeur-du-royaume-uni-%C3%A0-washington-peter-mandelson-arr%C3%AAt%C3%A9-%C3%A0-londres"
   },
   {
-    "region": "europe",
-    "title": "Droits de douane : les eurodéputés prêts à suspendre l'accord UE/USA",
-    "date": "Mon, 23 Feb 2026 15:15:59 GMT",
-    "content": "Pierre Benazet est en direct de Bruxelles.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260223-droits-de-douane-les-eurod%C3%A9put%C3%A9s-pr%C3%AAts-%C3%A0-suspendre-l-accord-ue-usa"
-  },
-  {
-    "region": "europe",
-    "title": "Ukraine : le déni européen ? Parlons-en avec Stéphane Audoin-Rouzeau",
-    "date": "Mon, 23 Feb 2026 14:05:21 GMT",
-    "content": "C'est une semaine spéciale qui s’ouvre sur France 24, alors que la guerre en Ukraine entrera demain dans sa cinquième année. Nous vous proposons un grand entretien avec l’un des plus grands spécialistes français du fait guerrier : l’historien Stéphane Audoin-Rouzeau. Dans son dernier essai, il alerte les Européens sur le déni dans lequel ils vivent depuis longtemps, qui les empêche d’être a la hauteur du moment, mais aussi de voir ce qui les attend.",
-    "url": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20260223-ukraine-le-d%C3%A9ni-europ%C3%A9en-parlons-en-avec-st%C3%A9phane-audoin-rouzeau"
+    "region": "afrique",
+    "title": "Le premier ministre du Sénégal Ousmane Sonko dénonce les frappes israélo-américaines sur l’Iran",
+    "date": "Tue, 03 Mar 2026 14:37:45 GMT",
+    "content": "Le premier ministre du Sénégal Ousmane Sonko dénonce les frappes israélo-américaines sur l’Iran, il estime qu’il s’agit d’une attaque sans mandat de l’ONU et donc d’une violation du droit international. Il a mis en garde contre un déséquilibre de l’ordre mondial.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20260303-le-premier-ministre-du-s%C3%A9n%C3%A9gal-ousmane-sonko-d%C3%A9nonce-les-frappes-isra%C3%A9lo-am%C3%A9ricaines-sur-l-iran"
   },
   {
     "region": "afrique",
@@ -413,11 +420,39 @@
     "url": "https://www.france24.com/fr/%C3%A9missions/focus/20260220-enr%C3%B4l%C3%A9s-par-la-russie-depuis-l-afrique-des-k%C3%A9nyans-envoy%C3%A9s-sur-le-front"
   },
   {
-    "region": "afrique",
-    "title": "Des \"actes de génocide\" au Soudan en octobre 2025 selon l'ONU",
-    "date": "Fri, 20 Feb 2026 12:29:05 GMT",
-    "content": "La mission indépendante d'établissement des faits de l'ONU sur le Soudan a fait état jeudi d'\"actes de génocide\" à El-Facher, théâtre d'exactions après sa prise par les paramilitaires des Forces de soutien rapide (FSR) fin octobre. Précisions de Bastien Renouil, correspondant régionale de France 24 au Kenya.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260220-des-actes-de-g%C3%A9nocide-au-soudan-en-octobre-2025-selon-l-onu"
+    "region": "ameriques",
+    "title": "Melania Trump préside un Conseil de sécurité de l’ONU, une première",
+    "date": "Tue, 03 Mar 2026 19:48:27 GMT",
+    "content": "Melania #Trump, présidente inédite du Conseil de l’#ONU, ce lundi 2 mars. Elle y a plaidé la cause des enfants victimes de la guerre à travers le monde. C’est la première fois que l’épouse ou l’époux d’un dirigeant en exercice préside une telle réunion.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-melania-trump-pr%C3%A9side-un-conseil-de-s%C3%A9curit%C3%A9-de-l-onu-une-premi%C3%A8re"
+  },
+  {
+    "region": "ameriques",
+    "title": "Affaire Epstein : Bill Clinton se défend d'avoir eu connaissance des agissements du financier",
+    "date": "Tue, 03 Mar 2026 11:29:51 GMT",
+    "content": "La commission parlementaire qui a entendu Bill Clinton sur ses liens avec Jeffrey Epstein a publié, lundi, les vidéos des auditions à huis clos de l'ex-président démocrate américain et de son épouse Hillary. Il y a assuré n'avoir pas eu connaissance des actes du criminel sexuel ni d'agissements répréhensibles de la part de Donald Trump en relation avec le financier.",
+    "url": "https://www.france24.com/fr/am%C3%A9riques/20260303-devant-une-commission-parlementaire-bill-clinton-a-assur%C3%A9-n-avoir-rien-su-des-agissements-d-epsteina"
+  },
+  {
+    "region": "ameriques",
+    "title": "En images : funérailles sous haute sécurité du narcotrafiquant El Mencho au Mexique",
+    "date": "Tue, 03 Mar 2026 11:16:33 GMT",
+    "content": "Le narcotrafiquant et ex-chef du puissant cartel Jalisco Nueva Generacion, Nemesio Oseguera alias El Mencho, tué par l'armée mexicaine, a été enterré lundi dans un petit cimetière de l'ouest du Mexique. Un évènement encadré par un important dispositif de sécurité composé de militaires, de membres de la Garde nationale et des policiers.",
+    "url": "https://www.france24.com/fr/am%C3%A9riques/20260303-en-images-funerailles-sous-haute-s%C3%A9curite-narcotrafiquant-el-mencho-au-mexique"
+  },
+  {
+    "region": "ameriques",
+    "title": "Argentine : début du procès du San Juan, sous-marin qui a implosé avec 44 marins à son bord",
+    "date": "Tue, 03 Mar 2026 06:33:11 GMT",
+    "content": "En 2017, le sous-marin militaire San Juan et les 44 marins à son bord ont disparu des radars dans l'implosion du submersible. Huit ans après cette tragédie qui a bouleversé le pays, les familles des victimes espèrent obtenir des réponses alors que s'est ouvert mardi le procès de quatre ex-haut gradés. L'accusation leur reproche des manquements dans la maintenance du bâtiment construit en 1983.",
+    "url": "https://www.france24.com/fr/am%C3%A9riques/20260303-argentine-d%C3%A9but-du-proc%C3%A8s-du-san-juan-sous-marin-qui-a-implos%C3%A9-avec-44-personnes-%C3%A0-son-bord"
+  },
+  {
+    "region": "ameriques",
+    "title": "Guerre au Moyen-Orient : satisfait du soutien de Berlin, Trump s'en prend à Madrid et à Londres",
+    "date": "Tue, 03 Mar 2026 03:49:10 GMT",
+    "content": "Le président ⁠américain Donald Trump reçoit mardi ​le chancelier allemand Friedrich Merz à la Maison Blanche, pour des discussions devant porter sur divers sujets sensibles, dont l'attaque lancée par les États-Unis et Israël ​sur l'Iran, les nouvelles menaces américaines de droits de douane et la récente visite du dirigeant allemand en Chine.",
+    "url": "https://www.france24.com/fr/am%C3%A9riques/20260303-trump-re%C3%A7oit-merz-son-premier-invit%C3%A9-depuis-le-d%C3%A9but-de-la-guerre-en-iran"
   },
   {
     "region": "ameriques",
@@ -425,6 +460,13 @@
     "date": "Mon, 02 Mar 2026 13:35:33 GMT",
     "content": "Depuis le retour de Donald Trump à la tête des États-Unis, la censure de livres dans les écoles américaines a significativement augmenté. Selon PEN America, plus de 6 800 cas d’interdiction ont été recensés, avec en tête de liste des ouvrages du célèbre Stephen King. Au Texas, les bibliothèques des écoles publiques sont devenues le terrain d’une bataille politique sans précédent autour de la liberté d’expression. Reportage de Pierrick Leurent et Valérie Defert.",
     "url": "https://www.france24.com/fr/%C3%A9missions/focus/20260302-%C3%A9tats-unis-des-livres-censur%C3%A9s-dans-les-%C3%A9coles-publiques-du-texas"
+  },
+  {
+    "region": "ameriques",
+    "title": "\"Merci madame la présidente\" : Melania Trump préside un Conseil de sécurité de l'ONU, une première",
+    "date": "Mon, 02 Mar 2026 03:11:12 GMT",
+    "content": "La Première dame américaine Melania Trump a présidé lundi soir une réunion du Conseil de sécurité de l'ONU à New York, une première historique. \"Les États-Unis sont aux côtés de tous les enfants à travers le monde\", a-t-elle assuré, deux jours après le début des frappes israélo-américaines sur l'Iran qui ont embrasé le Moyen-Orient.",
+    "url": "https://www.france24.com/fr/am%C3%A9riques/20260302-merci-madame-la-pr%C3%A9sidente-melania-trump-pr%C3%A9side-un-conseil-de-s%C3%A9curit%C3%A9-de-l-onu-une-premi%C3%A8re"
   },
   {
     "region": "ameriques",
@@ -588,39 +630,25 @@
     "url": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20260225-un-%C3%A2ge-d-or-am%C3%A9ricain-vraiment-parlons-en-avec-r-sciora-g-rybinski-et-j-andr%C3%A9"
   },
   {
-    "region": "ameriques",
-    "title": "\"Pas des singes\", discours fleuve et hockey : cinq moments marquants du discours de Trump",
-    "date": "Wed, 25 Feb 2026 06:53:01 GMT",
-    "content": "Un démocrate expulsé pour sa pancarte en soutien au couple Obama, des poignées de main cordiales avec les juges de la Cour suprême, qui vient de retoquer ses droits de douane, les hockeyeurs médaillés d'or acclamés par tout le Congrès... Ce discours de l'état de l'Union, à la durée record, n'a pas été avare en moments marquants. En voici cinq.",
-    "url": "https://www.france24.com/fr/am%C3%A9riques/20260225-singes-discours-fleuve-hockey-omar-cinq-moments-marquants-donald-trump"
+    "region": "asie",
+    "title": "Au Japon, le soutien à la peine de mort reste élevé",
+    "date": "Tue, 03 Mar 2026 13:24:42 GMT",
+    "content": "Le Japon est l'un des rares pays à encore appliquer la peine de mort. Dernière condamnation en date : un homme pendu, en juin dernier, pour avoir tué neuf personnes en 2017. L’archipel est, avec les États-Unis, le dernier pays du G7 à appliquer la peine de mort. Elle serait même soutenue par 80 % des Japonais. Reportage de Ayana Nishikawa, Alexis Bregere et Mélodie Sforza.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/focus/20260303-au-japon-le-soutien-%C3%A0-la-peine-de-mort-reste-%C3%A9lev%C3%A9"
   },
   {
-    "region": "ameriques",
-    "title": "Trump établit un record : Le discours sur l’État de l’Union le plus long depuis des décennies",
-    "date": "Wed, 25 Feb 2026 06:47:36 GMT",
-    "content": "Le président américain Donald Trump a prononcé mardi le plus long discours sur l’État de l’Union jamais tenu, battant le record de Bill Clinton en 2000, qui durait une heure et 20 minutes.\n \nLe républicain Trump a également dépassé son propre record d’1 heure et 40 minutes pour un discours présidentiel devant le Congrès, qu’il avait établi en mars dernier lors d’un discours annuel qui n’était pas techniquement un État de l’Union.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260225-trump-%C3%A9tablit-un-record-le-discours-sur-l-%C3%A9tat-de-l-union-le-plus-long-depuis-des-d%C3%A9cennies"
+    "region": "asie",
+    "title": "Explosions à Kaboul, les combats entre Afghanistan et Pakistan continuent à la frontière",
+    "date": "Tue, 03 Mar 2026 04:30:09 GMT",
+    "content": "Des explosions et des coups de feu ont retenti mardi à Kaboul, alors que les combats entre le Pakistan et l'Afghanistan continuent à la frontière entre les deux pays. Au moins 42 civils ont été tués depuis jeudi et 104 ont été blessés, selon un nouveau bilan de la Mission d'assistance des Nations unies en Afghanistan.",
+    "url": "https://www.france24.com/fr/asie-pacifique/20260303-explosions-kaboul-combats-afghanistan-pakistan-continuent-fronti%C3%A8re-taliban"
   },
   {
-    "region": "ameriques",
-    "title": "Discours sur l’état de l’Union : Trump vante une Amérique \"qui gagne\", malgré une réalité moins rose",
-    "date": "Wed, 25 Feb 2026 06:29:03 GMT",
-    "content": "\"Transformation sans précédent\", \"redressement historique\", \"âge d'or de l'Amérique : Donald Trump a brossé, mardi soir devant le Congrès, un tableau idyllique des États-Unis depuis son retour au pouvoir en janvier, et ce malgré le mécontentement grandissant des Américains sur l’économie et l’immigration, à moins d’un an des élections de mi-mandat.",
-    "url": "https://www.france24.com/fr/am%C3%A9riques/20260225-etats-unis-discours-sur-l-etat-de-l-union-donald-trump-peint-l-amerique-en-rose-inflation-economie-immigration"
-  },
-  {
-    "region": "ameriques",
-    "title": "Trump affirme que l’Iran construit des missiles pouvant atteindre des cibles américaines",
-    "date": "Wed, 25 Feb 2026 05:31:20 GMT",
-    "content": "Lors de son discours sur l’état de l’Union, le président américain Donald Trump a déclaré que l’Iran et ses alliés ont « répandu rien d’autre que le terrorisme, la mort et la haine », ajoutant que ses dirigeants ont tué au moins 32 000 manifestants ces dernières semaines.\n \nIl a également averti que Téhéran a développé des missiles capables de menacer l’Europe et travaille sur des missiles « qui atteindront bientôt » les États-Unis, tout en essayant de reconstruire son programme nucléaire.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260225-trump-affirme-que-l-iran-construit-des-missiles-pouvant-atteindre-des-cibles-am%C3%A9ricaines"
-  },
-  {
-    "region": "ameriques",
-    "title": "Donald Trump accueille l’équipe masculine de hockey des États-Unis",
-    "date": "Wed, 25 Feb 2026 03:36:41 GMT",
-    "content": "Il a ajouté qu’il prévoit de remettre la Médaille présidentielle de la Liberté au gardien de but de l’équipe, Connor Hellebuyck. Cette distinction est la plus haute récompense civile qu’un président puisse décerner.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260225-donald-trump-accueille-l-%C3%A9quipe-masculine-de-hockey-des-%C3%A9tats-unis"
+    "region": "asie",
+    "title": "En Inde, Narendra Modi et Mark Carney annoncent des accords sur les terres rares et l'uranium",
+    "date": "Mon, 02 Mar 2026 03:19:10 GMT",
+    "content": "Alors que leurs relations s'étaient détériorées depuis 2023, l'Inde et le Canada ont convenu de plusieurs accords, ont annoncé, lundi, Narendra Modi et Mark Carney à New Delhi. Ceux-ci portent notamment sur la coopération dans le domaine des minéraux critiques et \"l'approvisionnement en concentré d'uranium\".",
+    "url": "https://www.france24.com/fr/asie-pacifique/20260302-en-inde-narendra-modi-et-mark-carney-annoncent-des-accords-sur-les-terres-rares-et-l-uranium"
   },
   {
     "region": "asie",
@@ -812,227 +840,213 @@
     "url": "https://www.france24.com/fr/asie-pacifique/20260219-coree-du-nord-kim-jong-un-ouvre-congres-important-parti-travailleurs-nucleaire"
   },
   {
-    "region": "asie",
-    "title": "Le Pakistan, victime collatérale de la guerre afghane contre la drogue",
-    "date": "Thu, 19 Feb 2026 11:28:48 GMT",
-    "content": "Longtemps simple pays de transit, le Pakistan devient une terre de production et de consommation massive de drogues. En cause : le bouleversement provoqué par le retour des Talibans au pouvoir en Afghanistan en 2021.",
-    "url": "https://www.france24.com/fr/%C3%A9missions/focus/20260219-pakistan-nouvelle-terre-de-drogues-quand-l-afghanistan-exporte-sa-crise"
-  },
-  {
-    "region": "asie",
-    "title": "Projet Nantianmen : la science-fiction, nouvelle alliée des militaires chinois",
-    "date": "Thu, 19 Feb 2026 06:07:44 GMT",
-    "content": "Une vidéo très futuriste du prototype d'un gigantesque porte-drones orbital a été diffusée récemment par les médias chinois. Le nouvel engin s’inscrirait dans le projet Nantianmen. Surprenant tant il relève plutôt de la science-fiction que du militaire… Mais en Chine, les deux ne sont pas si éloignés que ça.",
-    "url": "https://www.france24.com/fr/asie-pacifique/20260219-projet-nantianmen-science-fiction-chinoise-armee-porte-avions-drones"
-  },
-  {
-    "region": "asie",
-    "title": "Corée du Sud : l'ex-président Yoon Suk-yeol condamné à la prison à vie pour sa loi martiale de 2024",
-    "date": "Thu, 19 Feb 2026 04:47:15 GMT",
-    "content": "L'ancien président de la Corée du Sud Yoon Suk-yeol a été condamné, jeudi, à la prison à vie pour avoir mené une insurrection en déclarant la loi martiale le 3 décembre 2024 pour cause de \"forces hostiles à l'État\" tandis que l'armée se déployait pour boucler le Parlement et le réduire au silence.",
-    "url": "https://www.france24.com/fr/asie-pacifique/20260219-cor%C3%A9e-du-sud-l-ex-pr%C3%A9sident-yoon-suk-yeol-condamn%C3%A9-%C3%A0-la-prison-%C3%A0-vie-pour-sa-loi-martiale-de-2024"
+    "region": "moyen_orient",
+    "title": "Replay - Emmanuel Macron s'adresse aux Français sur la guerre au Moyen-Orient",
+    "date": "Tue, 03 Mar 2026 19:33:00 GMT",
+    "content": "S'adressant aux Français lors ‌d'une allocution télévisée mardi soir, ⁠Emmanuel Macron ​a déclaré avoir ​ordonné que le porte-avions Charles de Gaulle fasse route vers la Méditerranée, faisant ​savoir ‌également que des ⁠systèmes de défense avaient été ‌déployés ces dernières heures dans des ⁠pays du Moyen-Orient visés par des ripostes iraniennes ​aux frappes américano-israéliennes. Retrouvez en replay son allocution.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-replay-emmanuel-macron-s-adresse-aux-fran%C3%A7ais-sur-la-guerre-au-moyen-orient"
   },
   {
     "region": "moyen_orient",
-    "title": "Liban : Des dizaines de morts après des frappes israéliennes",
-    "date": "Mon, 02 Mar 2026 12:22:25 GMT",
-    "content": "Israël a mené de lourdes frappes aériennes à Beyrouth et dans des zones contrôlées par le Hezbollah, lundi, après que le groupe soutenu par l’Iran a lancé des missiles et des drones en direction d’Israël en représailles à l’assassinat du guide suprême iranien Ali Khamenei.\n \nLes frappes iraniennes dans la région se poursuivent, avec des explosions signalées à Bahreïn, à Dubaï et au Koweït.\n \nPlus de 1 000 sites iraniens ont été visés depuis le début des opérations américaines et israéliennes samedi, et au moins 555 personnes ont été tuées, a indiqué le Croissant-Rouge iranien.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260302-liban-des-dizaines-de-morts-apr%C3%A8s-des-frappes-isra%C3%A9liennes"
+    "title": "Moyen-Orient : l'escalade jusqu'où ?",
+    "date": "Tue, 03 Mar 2026 19:06:49 GMT",
+    "content": "C’est le quatrième jour de guerre contre l’Iran. L’armée américaine a affirmé avoir détruit des postes de commandement des Gardiens de la révolution. Dans le même temps, Israël est sur deux fronts : face à l’Iran, mais aussi au Liban contre le Hezbollah. Les Iraniens, eux, ciblent des sites américains dans les pays du Golfe. Deux drones ont visé l’ambassade des États-Unis en Arabie saoudite, provoquant un incendie et la fermeture de l'ambassade.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20260303-moyen-orient-l-escalade-jusqu-o%C3%B9"
   },
   {
     "region": "moyen_orient",
-    "title": "Guerre au Moyen-Orient : après la riposte d'Israël, l'exode des Libanais",
-    "date": "Mon, 02 Mar 2026 11:04:05 GMT",
-    "content": "En réponse aux frappes du Hezbollah menées par solidarité avec l'Iran, Israël a attaqué le Liban lundi. Des frappes sur la banlieue sud de Beyrouth, bastion du mouvement armé chiite pro-iranien, et sur le sud du pays ont contraint de nombreux habitants à fuir sur les routes. Récit en images.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260302-guerre-au-moyen-orient-face-riposte-isra%C3%ABl-exode-libanais-iran-hezbollah-frappes-population-beyrouth"
+    "title": "Nos Observateurs à Téhéran :  \"Le renversement du régime doit forcément venir de l'extérieur\"",
+    "date": "Tue, 03 Mar 2026 18:10:49 GMT",
+    "content": "Quatre jours après le début des frappes sur leur pays, les émotions des Iraniens oscillent entre la joie, dont font part certains qui veulent croire à une opportunité de faire tomber le régime, et la peur de voir le conflit faire des victimes civiles. Deux de nos Observateurs racontent comment ils vivent depuis le 28 février.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-observateurs-teheran-renversement-regime-doit-forcement-venir-ext%C3%A9rieur-frappes-israel-etats-unis"
   },
   {
     "region": "moyen_orient",
-    "title": "Le président Donald Trump cherche le \"prix Nobel de la guerre\" en Iran",
-    "date": "Mon, 02 Mar 2026 10:18:21 GMT",
-    "content": "À la Une de la presse, ce lundi 2 mars 2026 : la crise en Iran et au Proche-Orient fait évidemment la Une de tous les journaux dans la région. En France, les journaux se penchent sur la stratégie de force brute de Donald Trump. Au-delà des Unes, quelques journaux questionnent la stratégie de Donald Trump. L’Humanité affirme que Donald Trump serait en quête du prix Nobel de la guerre. Enfin, les dessins de presse imaginent l'héritage peu glorieux du guide suprême.",
-    "url": "https://www.france24.com/fr/%C3%A9missions/dans-la-presse/20260302-le-pr%C3%A9sident-donald-trump-cherche-le-prix-nobel-de-la-guerre-en-iran"
+    "title": "L'UE aide à évacuer des ressortissants européens bloqués au Moyen-Orient",
+    "date": "Tue, 03 Mar 2026 17:30:04 GMT",
+    "content": "Des Européens bloqués au Moyen-Orient en raison de la guerre déclenchée par les frappes américano-israéliennes contre l'Iran ont commencé à être évacués, a annoncé mardi la commissaire à la gestion des crises, Hadja Lahbib. Plusieurs États membres ont activé le mécanisme de protection civile de l'UE pour cofinancer ces rapatriements.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-l-ue-aide-%C3%A0-%C3%A9vacuer-des-ressortissants-europ%C3%A9ens-bloqu%C3%A9s-au-moyen-orient"
   },
   {
     "region": "moyen_orient",
-    "title": "Moyen-Orient en direct : \"nous irons aussi loin que nécessaire\" en Iran, affirme le Pentagone",
-    "date": "Mon, 02 Mar 2026 05:47:40 GMT",
-    "content": "Il n'y a actuellement aucun soldat américain sur le territoire iranien, mais \"nous irons aussi loin que nécessaire\", a affirmé le ministre américain de la Défense, Pete Hegseth. Au troisième jour de l'offensive militaire américano-israélienne, Israël cible désormais le Liban, tout en poursuivant ses frappes \"à grande échelle\" sur Téhéran. L'armée israélienne a dit avoir tué le chef du renseignement du Hezbollah. Suivez notre direct.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260302-en-direct-israel-vise-encore-teheran-iran-hezbollah-implique-conflit-etats-unis-frappes-netanyahu-liban-irak"
+    "title": "Les Iraniens rendent hommage aux écolières mortes dans le bombardement de leur école",
+    "date": "Tue, 03 Mar 2026 16:59:54 GMT",
+    "content": "Des milliers d'Iraniens se sont réunies dans les rues de la ville de Minab pour les #funérailles des écolières mortes dans le #bombardement de leur #école primaire. Plus de 787 personnes sont mortes en #Iran depuis le début du conflit.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-les-iraniens-rendent-hommage-aux-%C3%A9coli%C3%A8res-mortes-dans-le-bombardement-de-leur-%C3%A9cole"
   },
   {
     "region": "moyen_orient",
-    "title": "Un déluge de feu s'abat sur l'Iran, le conflit s'amplifie",
-    "date": "Mon, 02 Mar 2026 04:01:09 GMT",
-    "content": "Dimanche, de puissantes détonations ont été entendues dans et autour de Téhéran, le Pentagone assure avoir détruit le QG des Gardiens de la Révolution. En réponse, la République islamique a lancé une nouvelle salve de missiles en direction d'Israël - des débris faisant des victimes. Téhéran continue de viser les bases américaines chez ses voisins, les pays du Golfe, et des navires ont été attaqués dans le détroit d'Ormuz.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260302-un-d%C3%A9luge-de-feu-s-abat-sur-l-iran-le-conflit-s-amplifie"
+    "title": "De l'Ukraine à l'Iran, les drones kamikazes s'imposent comme le nerf de la guerre",
+    "date": "Tue, 03 Mar 2026 16:00:42 GMT",
+    "content": "Lors de l'opération \"Fureur épique\" menée depuis le 28 février contre l'Iran, les États-Unis ont déployé le LUCAS, leur premier drone kamikaze à bas coût, ouvertement inspiré du Shahed iranien.  Avec l'entrée en scène de cette nouvelle technologie, les Américains tirent les leçons de la guerre en Ukraine avec un drone jetable, visant à saturer à moindre coût les défenses adverses.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-ukraine-iran-drones-kamikazes-lucas-shahed-nerf-guerre-etats-unis"
   },
   {
     "region": "moyen_orient",
-    "title": "Liban : après l'Iran, Israël vise \"des cibles\" du Hezbollah, au risque de l'embrasement régional",
-    "date": "Mon, 02 Mar 2026 02:37:11 GMT",
-    "content": "Israël a mené des frappes sur le Liban, dans la nuit de dimanche à lundi, en riposte aux tirs de projectiles du Hezbollah. L'armée israélienne dit avoir visé \"des cibles de l'organisation terroriste Hezbollah\". Selon le ministère libanais, les frappes ont fait au moins 31 morts et 149 blessés.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260302-guerre-au-moyen-orient-isra%C3%ABl-frappe-le-liban-et-vise-des-cibles-du-hezbollah"
+    "title": "\"Epic Fury\" : ce que l'on sait des préparatifs de l'opération qui a tué Ali Khamenei",
+    "date": "Tue, 03 Mar 2026 15:09:01 GMT",
+    "content": "Samedi 28 février, les États-Unis et Israël lancent l'opération \"Epic Fury\", qui entraîne la mort du guide suprême iranien, Ali Khamenei, et d'autres hautes personnalités du régime en Iran. Rôle de la CIA et du Mossad, choix de la date et même déclenchement précipité : Cécile Galluccio fait le point sur ce que l'on sait aujourd'hui sur cette intervention.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-epic-fury-ce-que-l-on-sait-des-pr%C3%A9paratifs-de-l-op%C3%A9ration-qui-a-tu%C3%A9-ali-khamenei-iran-%C3%A9tats-unis-isra%C3%ABl-donald-trump-benjamin-netanyahu"
   },
   {
     "region": "moyen_orient",
-    "title": "\"Le dôme de fer n'est pas infaillible\", des explosions entendues à Jérusalem",
-    "date": "Mon, 02 Mar 2026 02:32:40 GMT",
-    "content": "\"Le dôme de fer n'est pas infaillible\", interceptant - selon les experts - 93 % des missiles. Ce dimanche, des frappes de missiles balistiques ont ainsi touché des zones civiles à Jérusalem, en Israël. \"Mais il faut le relativiser (...) Pour l'instant, Israël a toujours la suprématie du ciel et de la défense\", relate claire Duhamel, correspondante pour France 24 à Jérusalem.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260302-le-d%C3%B4me-de-fer-n-est-pas-infaillible-des-explosions-entendues-%C3%A0-j%C3%A9rusalem"
+    "title": "Guerre au Moyen-Orient : l'administration Trump en pleine zone de contradictions",
+    "date": "Tue, 03 Mar 2026 15:06:49 GMT",
+    "content": "Depuis le lancement de la guerre contre l'Iran, Donald Trump et son administration ont multiplié les propos contradictoires sur le conflit déclenché avec Israël. Des objectifs de la guerre à la durée prévue des frappes, France 24 fait le point sur le flou entretenu par les États-Unis sur leurs intentions au Moyen-Orient.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-guerre-moyen-orient-administration-trump-pleine-zone-contradictions-iran-nucleaire-europe"
   },
   {
     "region": "moyen_orient",
-    "title": "Bombardement présumé sur une école en Iran : voici ce que l'on sait",
-    "date": "Mon, 02 Mar 2026 00:10:43 GMT",
-    "content": "L'armée israélienne a déclaré dimanche \"ne pas être au courant\" d'une frappe américaine ou israélienne contre l'école Minab, dans le sud de l'Iran qui, selon les autorités iraniennes, a fait plus de 100 morts samedi. Washington a assuré enquêter sur ces informations. Voici ce que l’on sait.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260302-bombardement-presume-ecole-iran-israel-etats-unis-enquete-minab-morts"
+    "title": "Israël et les États-Unis assurent que la guerre en Iran ne sera pas \"sans fin\"",
+    "date": "Tue, 03 Mar 2026 14:10:00 GMT",
+    "content": "Alors que le conflit au Moyen-Orient continue, #Israël et les États-Unis ont assuré que la guerre ne serait pas \"sans fin\". Donald #Trump a affirmé qu'elle durerait \"quatre à cinq semaines\". Depuis le début de la campagne, plus de 787 personnes sont décédées en #Iran et plus de 130 villes ont été attaquées.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-isra%C3%ABl-et-les-%C3%A9tats-unis-assurent-que-la-guerre-en-iran-ne-sera-pas-sans-fin"
   },
   {
     "region": "moyen_orient",
-    "title": "Multiplication des attaques sur le territoire irakien",
-    "date": "Sun, 01 Mar 2026 23:42:48 GMT",
-    "content": "Sur le territoire irakien, les attaques se multiplient. \"Le Sud-Est a été visé par des attaques de drones non-identifiées, selon les sources sécuritaires\", explique Marie-Charlotte Roupie, correspondante de France 24 à Bagdad. Dans le nord du pays, les positions américaines sont fortement ciblées : des drones en ont visé près de l'aéroport d'Erbil, déclenchant plusieurs explosions. \"On ne connaît pas encore l'ampleur des dégâts mais la situation inquiète fortement les habitants.\"",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260301-multiplication-des-attaques-sur-le-territoire-irakien"
+    "title": "Iran : une guerre sans limites ? Parlons-en avec Camille Lons, Aïda Tavakoli et Karim Yahiaoui",
+    "date": "Tue, 03 Mar 2026 13:56:46 GMT",
+    "content": "En ce quatrième jour de guerre, l'armée libanaise retire des militaires à plusieurs points du sud du Liban, près de la frontière avec Israël, alors que l'armée israélienne frappe massivement Beyrouth. Des soldats israéliens sont déployés en \"plusieurs points\" dans le sud du Liban. De son côté, l'aviation israélienne a également lancé des frappes ciblées contre des postes de commandement du régime iranien et du mouvement islamiste libanais Hezbollah.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20260303-iran-une-guerre-sans-limites-parlons-en-avec-camille-lons-a%C3%AFda-tavakoli-et-karim-yahiaoui"
   },
   {
     "region": "moyen_orient",
-    "title": "Les activités économiques à l'arrêt en Iran",
-    "date": "Sun, 01 Mar 2026 23:36:51 GMT",
-    "content": "Les administrations, comme les banques et les boutiques, sont fermées. \"Toutes les activités économiques sont à l'arrêt pendant au moins sept jours en Iran\", rapporte Siavosh Ghazi, le correspondant de France 24 à Téhéran. \"En cette période de pré-nouvel an iranien, où les commerçants font d'habitude beaucoup d'affaire, de nombreuses pertes sont à prévoir alors qu'il y a déjà une forte inflation, ce qui provoque beaucoup de mécontentement.\"",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260301-les-activit%C3%A9s-%C3%A9conomiques-%C3%A0-l-arr%C3%AAt-en-iran"
+    "title": "Iran : quels objectifs pour Donald Trump ?",
+    "date": "Tue, 03 Mar 2026 12:09:47 GMT",
+    "content": "Donald Trump a livré une nouvelle explication des raisons qui l'ont poussé à entrer en guerre en présentant l'Iran comme une menace immédiate pour les États-Unis. Quels objectifs de guerre pour Washington ? On va plus loin avec Niagalé Bagayoko, Anne Corpet et Matthieu Mabin à Washington.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/on-va-plus-loin/20260303-iran-quels-objectifs-pour-trump"
   },
   {
     "region": "moyen_orient",
-    "title": "Le QG des Gardiens de la révolution iraniens détruit, la guerre menace d'embraser le Moyen-Orient",
-    "date": "Sun, 01 Mar 2026 23:18:28 GMT",
-    "content": "Le Quartier général des Gardiens de la révolution iraniens a été détruit, dimanche, par des frappes américano-israéliennes. Donald Trump les a une nouvelle fois appelé à \"déposer les armes\" alors que les États-Unis ont déploré leurs premières victimes. De son côté, Téhéran a continué à mener des frappes de représailles sur les pays du Golfe, laissant craindre un embrasement régional.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-quartier-general-gardiens-revolution-iraniens-detruit-guerre-menace-embraser-moyen-orient-etats-unis-pays-golfe-donald-trump-frappes-operation"
+    "title": "Crise au Moyen-Orient : \"Le Hezbollah suicide le Liban\"",
+    "date": "Tue, 03 Mar 2026 09:53:27 GMT",
+    "content": "À la Une de la presse, ce mardi 3 mars 2026, la crise au Moyen-Orient fait toujours la Une des journaux français. La presse se concentre aussi sur le Liban, où les frappes israéliennes continuent de faire des dégâts. Ailleurs, Libération recueille les témoignages de trois ex-mannequins qui décrivent un réseau de prédation organisé à Paris dans les années 90. Enfin, le Guardian explique comment le vocabulaire masculiniste a infiltré notre langage de tous les jours.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/dans-la-presse/20260303-crise-au-moyen-orient-le-hezbollah-suicide-le-liban"
   },
   {
     "region": "moyen_orient",
-    "title": "Objectifs flous, dommages collatéraux... L'attaque de l'Iran \"piétine le droit international\"",
-    "date": "Sun, 01 Mar 2026 14:11:21 GMT",
-    "content": "Au lendemain du lancement de l'opération israélo-américaine sur l'Iran, qui a notamment conduit à la mort du guide suprême Ali Khamenei, Thierry Coville, chercheur à l'Iris et spécialiste de l'Iran, analyse les justifications et la légalité d'une telle attaque du point de vue du droit international, ainsi que le \"scénario très inquiétant qui se profile\" dans la région.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-objectifs-flous-dommages-collat%C3%A9raux-attaque-iran-pi%C3%A9tinement-droit-international"
+    "title": "En images : Israël mène des \"frappes simultanées\" sur Téhéran et Beyrouth",
+    "date": "Tue, 03 Mar 2026 09:43:08 GMT",
+    "content": "L'armée israélienne mène mardi des \"frappes simultanées\" sur Téhéran et sur la banlieue sud de Beyrouth, au quatrième jour de guerre au Moyen-Orient. Elle dit cibler \"des objectifs militaires du régime terroriste iranien et de l'organisation terroriste du Hezbollah\", alors que le Hezbollah a mené des tirs contre Israël dans la nuit de dimanche à lundi, précipitant le Liban dans la guerre. Récit en images des dégâts d'une escalade militaire.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-images-quatri%C3%A8me-jour-guerre-isra%C3%ABl-frappes-simultan%C3%A9es-t%C3%A9h%C3%A9ran-beyrouth-iran-liban"
   },
   {
     "region": "moyen_orient",
-    "title": "Blocage du détroit d'Ormuz : quels risques pour les pétroliers et le commerce mondial ?",
-    "date": "Sun, 01 Mar 2026 12:41:11 GMT",
-    "content": "Des pétroliers navigant aux abords du détroit d'Ormuz ont été pris pour cible par des drones, tandis que des centaines de navires jettent l'ancre à l'extérieur de ce passage maritime étroit entre l'Iran et la péninsule arabique. Téhéran avait annoncé samedi avoir fermé la navigation dans le détroit, par lequel transite 20 % du pétrole mondial.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-guerre-au-moyen-orient-dans-le-d%C3%A9troit-d-ormuz-des-p%C3%A9troliers-pris-entre-deux-feux"
+    "title": "Des vols affrétés par la France au Moyen-Orient pour rapatrier ses ressortissants vulnérables",
+    "date": "Tue, 03 Mar 2026 09:05:17 GMT",
+    "content": "Le ministre des Affaires étrangères français, Jean-Noël Barrot, a annoncé mardi que la France se préparait à affréter des vols pour rapatrier \"en priorité\" ses ressortissants les plus vulnérables. Près de 400 000 ressortissants français se trouvent dans la région d'après le chef de la diplomatie, dont 25 000 se sont déjà manifestés pour être localisés et inscrits sur les listes de rapatriement.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-vols-affr%C3%A9t%C3%A9s-par-france-moyen-orient-rapatrier-ressortissants-vuln%C3%A9rables-iran-isra%C3%ABl-guerre"
   },
   {
     "region": "moyen_orient",
-    "title": "Le guide suprême iranien, Ali Khamenei, est mort. Quelles réactions sur place ?",
-    "date": "Sun, 01 Mar 2026 11:56:06 GMT",
-    "content": "Le 28 février à 22h40 heure française, Donald Trump annonce la mort du guide suprême iranien, Ali Khamenei. Comment est-il mort ? Quelles sont les réactions sur place ? Éléments de réponse en vidéo avec Ava Luquet, et la correspondance de Siavosh Ghazi depuis Téhéran.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260301-le-guide-supr%C3%AAme-iranien-ali-khamenei-est-mort-quelles-r%C3%A9actions-sur-place"
+    "title": "Israël envoie des troupes au Liban et crée une \"zone tampon\"",
+    "date": "Tue, 03 Mar 2026 08:35:00 GMT",
+    "content": "L'armée israélienne a affirmé mardi avoir déployé des soldats au sol dans le sud du pays et y créer une \"zone tampon\", peu après l'autorisation donnée par le ministre israélien de la Défense de prendre le contrôle de nouvelles positions au Liban. Depuis le cessez-le-feu conclu en novembre 2024, l'armée israélienne maintenait déjà des soldats sur cinq positions jugées stratégiques au Liban.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-liban-isra%C3%ABl-annonce-que-l-arm%C3%A9e-va-prendre-le-contr%C3%B4le-de-nouvelles-positions"
   },
   {
     "region": "moyen_orient",
-    "title": "La mort de Khamenei va \"beaucoup déstabiliser les Gardiens de la révolution et le clergé chiite\"",
-    "date": "Sun, 01 Mar 2026 10:49:02 GMT",
-    "content": "Au lendemain de la mort du guide suprême dans l'attaque israélo-américaine, l'Iran a entamé un deuil de 40 jours. Pour la journaliste Maya Khadra, spécialiste du Moyen-Orient, l'élimination de l'ayatollah Ali Khamenei représente une réelle rupture. Si le régime devait tomber, ce serait un changement avant tout venu de l'intérieur \"par le peuple iranien qui, dans sa majorité, refuse ce régime théocratique et liberticide\".",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-iran-mort-khamenei-va-beaucoup-d%C3%A9stabiliser-gardiens-r%C3%A9volution-clerg%C3%A9-chiite-maya-khadra"
+    "title": "Iran : confusion et fausses images de frappes contre le porte-avions USS Lincoln",
+    "date": "Tue, 03 Mar 2026 07:51:07 GMT",
+    "content": "Les autorités iraniennes ont affirmé le 1er mars avoir frappé le porte-avion américain USS Lincoln. Malgré le démenti américain, plusieurs vidéos vues des millions de fois en ligne ont laissé penser à la destruction du navire. Mais ces vidéos sont fausses, le plus souvent issues de jeux vidéo.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-iran-confusion-fausses-images-frappes-contre-porte-avions-uss-lincoln"
   },
   {
     "region": "moyen_orient",
-    "title": "Israël frappe des cibles du Hezbollah au Liban après des tirs du mouvement",
-    "date": "Sun, 01 Mar 2026 05:54:12 GMT",
-    "content": "L'armée israélienne a annoncé, lundi, frapper des cibles du Hezbollah \"à travers le Liban\", en réponse aux tirs de projectiles du mouvement vers l'État hébreu. Des tirs vers Israël jugés \"irresponsables\" par le Premier ministre libanais, quand le président Joseph Aoun estime qu'ils nuisent aux efforts de Beyrouth pour éviter d'être entraîné dans le conflit. L'armée israélienne mène également \"des frappes à grande échelle contre des cibles du régime iranien à travers Téhéran\". Retrouvez le fil du 1er mars 2026.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-en-direct-guerre-au-moyen-orient-nouvelles-explosions-%C3%A0-abu-dhabi-duba%C3%AF-doha-et-manama"
+    "title": "Israël annonce rouvrir mardi un point de passage pour l'aide humanitaire vers Gaza",
+    "date": "Tue, 03 Mar 2026 07:44:11 GMT",
+    "content": "Fermé samedi par mesure de \"sécurité\" après le lancement de l'opération militaire américano-israélien, le point de passage de Kerem Shalom doit être réouvert mardi, a annoncé le ministère de la Défense israélien. Situé sur la triple frontière entre la bande de Gaza, Israël et l'Égypte, il permet l'acheminement de l'aide humanitaire et les évacuations médicales.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-isra%C3%ABl-annonce-rouvrir-point-de-passage-aide-humanitaire-gaza-%C3%A9gypte-iran"
   },
   {
     "region": "moyen_orient",
-    "title": "La région de Tel-Aviv visée par des frappes, la population \"épuisée\"",
-    "date": "Sun, 01 Mar 2026 01:06:14 GMT",
-    "content": "Faillite du Dôme de fer ou chute de fragments de missiles sur des bâtiments ? Le doute persiste après que des blessés ont été recensés dans la région de Tel-Aviv à la suite de frappes iraniennes, samedi. \"La population israélienne est épuisée (...) Elle ne comprend pas à 100 % le but de cette nouvelle guerre\", rapporte la correspondante de France 24 à Jérusalem, Noga Tarnopolsky.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260301-la-r%C3%A9gion-de-tel-aviv-vis%C3%A9e-par-des-frappes-la-population-%C3%A9puis%C3%A9e"
+    "title": "Moyen-Orient en direct : l'Iran dit ne pas avoir encore utilisé ses armements les plus perfectionnés",
+    "date": "Tue, 03 Mar 2026 03:53:02 GMT",
+    "content": "L'Iran n'a pas encore utilisé ses armements les plus perfectionnés, a assuré le ministère iranien de la Défense, ajoutant que le pays a \"la capacité de résister\". L'un des deux aéroports de Téhéran a été visé par des frappes israélo-américaines, et l'État hébreu a bombardé des sites de production de missiles. Sur le front libanais, l'armée israélienne a poursuivi ses frappes sur Beyrouth et annoncé la création d'une \"zone tampon\" entre le Hezbollah et sa population. Suivez notre direct.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260303-en-direct-guerre-moyen-orient-israel-iran-etats-unis-pays-golfe-liban-trump-netanyahu"
   },
   {
     "region": "moyen_orient",
-    "title": "Téhéran dément la mort du guide suprême iranien",
-    "date": "Sun, 01 Mar 2026 00:54:07 GMT",
-    "content": "Ministre iranien des Affaires étrangères, députés : les démentis se multipliaient, samedi, pour contredire l'annonce de la mort du guide suprême iranien, Ali Khamenei. Les autorités iraniennes assurent qu'il commande les opérations menées contre les bases américaines de la région et Israël. \"Mais pour l'instant il n'y a toujours pas d'apparition publique, ce qui accentue les incertitudes\", rapporte Siavosh Ghazi, correspondant pour France 24 à Téhéran.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260301-t%C3%A9h%C3%A9ran-d%C3%A9ment-la-mort-du-guide-supr%C3%AAme-iranien"
+    "title": "Plusieurs \"symboles du pouvoir iranien\" frappés",
+    "date": "Tue, 03 Mar 2026 00:15:58 GMT",
+    "content": "L'ancien bâtiment du parlement iranien, non loin du palais présidentiel et dans le secteur du bâtiment du guide suprême iranien, a été visé par les frappes israéliennes, rapporte le correspondant de France 24 à Téhéran, Siavosh Ghazi. \"Les symboles du pouvoir sont une nouvelle fois visés.\" L'armée israélienne a appelé à évacuer le secteur de la prison d'Evine à Téhéran.",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260303-plusieurs-symboles-du-pouvoir-iranien-frapp%C3%A9s"
   },
   {
     "region": "moyen_orient",
-    "title": "Donald Trump se réjouit de la mort du guide suprême iranien Ali Khamenei",
-    "date": "Sun, 01 Mar 2026 00:25:45 GMT",
-    "content": "Le président américain Donald Trump a annoncé samedi que le guide suprême iranien, Ali Khamenei, avait été tué dans l'opération militaire américano-israélienne contre l'Iran – une information confirmée dimanche au petit matin par la télévision d'État iranienne. Le locataire de la Maison Blanche a toutefois prévenu que les frappes se poursuivraient.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260301-donald-trump-rejouit-mort-annoncee-guide-supreme-iranien-ali-khamenei-etats-unis-operation-militaire-frappes"
+    "title": "Téhéran désertée, la sécurité renforcée pour éviter une relance du mouvement de contestation",
+    "date": "Mon, 02 Mar 2026 23:19:46 GMT",
+    "content": "\"Les rues de Téhéran sont vides, la population est terrée chez elle (...) Le contrôle sécuritaire a été renforcé\" : autant de faits qui attestent que \"le pouvoir iranien ne permettra pas une tentative de relance du mouvement de contestation en Iran\", rapporte le correspondant de France 24 à Téhéran, Siavosh Ghazi. Il estime que tout le monde se rend compte que \"le conflit va durer\". \"L'économie est paralysée, ce qui aura des conséquences sur les classes les plus pauvres.\"",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260302-t%C3%A9h%C3%A9ran-d%C3%A9sert%C3%A9e-la-s%C3%A9curit%C3%A9-renforc%C3%A9e-pour-%C3%A9viter-une-relance-du-mouvement-de-contestation"
   },
   {
     "region": "moyen_orient",
-    "title": "A l'ONU, l'Iran dénonce un \"crime de guerre\" après les frappes américano-israéliennes",
-    "date": "Sat, 28 Feb 2026 23:21:36 GMT",
-    "content": "Israël et les États-Unis ont ⁠lancé samedi une campagne ​de frappes aériennes présentée comme \"préventive\" contre l'Iran, précisant que celle-ci devrait durer \"plusieurs jours\", alors que les médias officiels iraniens font état de nombreuses explosions à Téhéran et dans d'autres villes du pays. A l'ONU, l'Iran dénonce un \"crime de guerre\" après la mort de civils dans les frappes américano-israéliennes",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260228-a-l-onu-l-iran-d%C3%A9nonce-un-crime-de-guerre-apr%C3%A8s-les-frappes-am%C3%A9ricano-isra%C3%A9liennes"
+    "title": "Mossad - CIA : les coulisses de la mort d'Ali Khamenei",
+    "date": "Mon, 02 Mar 2026 23:12:14 GMT",
+    "content": "Au troisième jour du déclenchement de la guerre en Iran par les Américains et les Israéliens, on en sait un peu plus sur la façon dont elle a été préparée. C'est notamment leurs capacités de renseignement conjointes qui ont permis de décapiter le régime iranien.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/les-cl%C3%A9s-de-l-info/20260302-mossad-cia-les-coulisses-de-la-mort-d-ali-khamenei"
   },
   {
     "region": "moyen_orient",
-    "title": "Frappes en Iran : réunion d'urgence du conseil de sécurité de l'ONU",
-    "date": "Sat, 28 Feb 2026 22:43:12 GMT",
-    "content": "Le secrétaire général des Nations unies, Antonio Guterres, a condamné \"l'escalade militaire au Moyen-Orient\" observée samedi après les frappes des Etats-Unis et d'Israël sur l'Iran, tandis que le Conseil de sécurité de l'ONU s'est réuni en urgence dans l'après-midi. Mike Waltz, représentant permanent des Etats-Unis auprès de l'ONU, s'est exprimé à cette occasion.",
-    "url": "https://www.france24.com/fr/vid%C3%A9o/20260228-frappes-en-iran-r%C3%A9union-d-urgence-du-conseil-de-s%C3%A9curit%C3%A9-de-l-onu"
+    "title": "Une partie du mouvement MAGA préoccupée par la guerre au Moyen-Orient",
+    "date": "Mon, 02 Mar 2026 22:52:12 GMT",
+    "content": "Le président \"marche sur une ligne de crête assez étroite politiquement\", estime le correspondant de France 24 à Washington Matthieu Mabin, expliquant : \"une partie du mouvement MAGA est instinctivement hostile aux guerres longues au Moyen-Orient\". La base MAGA, qui reste fidèle à Donald Trump, reste préoccupée par le coup humain et financier de la guerre, et impose une condition : \"pas de troupe américaine au sol\".",
+    "url": "https://www.france24.com/fr/vid%C3%A9o/20260302-une-partie-du-mouvement-maga-pr%C3%A9occup%C3%A9e-par-la-guerre-au-moyen-orient"
   },
   {
     "region": "moyen_orient",
-    "title": "Iran : au moins 85 morts dans une frappe sur une école de filles, selon les médias d'État",
-    "date": "Sat, 28 Feb 2026 16:15:32 GMT",
-    "content": "Au moins 85 personnes auraient été tuées samedi lors d'une frappe contre une école primaire de filles dans le sud de l'Iran, ont rapporté les médias d'État, après le lancement de frappes contre l'Iran par Israël et les États-Unis. Le président Massoud Pezeshkian a condamné un acte \"barbare\".",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-iran-frappe-%C3%A9cole-filles-85-morts-pezeshkian-acte-barbare"
+    "title": "Iran : que sait-on sur la destruction de l'école de Minab ?",
+    "date": "Mon, 02 Mar 2026 22:12:29 GMT",
+    "content": "L'Iran assure qu'un bombardement américano-israélien a lourdement détruit une école du sud du pays et avance le bilan de 168 morts. Ni les États-Unis ni Israël ne confirment la paternité de cette attaque. Si, pour l'heure, il est impossible de vérifier en toute indépendance la responsabilité de cette frappe et le nombre de victimes, l'analyse des images nous fournit certains éléments.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20260302-iran-que-sait-on-sur-la-destruction-de-l-%C3%A9cole-de-minab"
   },
   {
     "region": "moyen_orient",
-    "title": "Crise bancaire au Liban : sept ans d’attente et une loi qui hiérarchise les clients",
-    "date": "Sat, 28 Feb 2026 16:04:33 GMT",
-    "content": "En 2019, les banques du Liban ont gelé les dépôts après l’effondrement financier du pays. Sept ans plus tard, une loi adoptée fin 2025 doit organiser la répartition des pertes. Mais pour les épargnants, l’enjeu dépasse les chiffres : la confiance est aujourd’hui brisée. Croire encore en un système qui les a laissés sans réponse semble relever de la gageure.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-crise-bancaire-liban-gap-law-loi-tri-clients"
+    "title": "Le Koweït aspiré malgré lui par la guerre au Moyen-Orient",
+    "date": "Mon, 02 Mar 2026 20:45:15 GMT",
+    "content": "Le Koweït a été visé par plusieurs frappes iraniennes menées lundi en riposte à l'offensive israélo-américaine de samedi. L'Iran a notamment affirmé avoir visé une base américaine. Des colonnes de fumées ont été observées au dessus de l'ambassade américaine et d'une centrale électrique. Des troubles inédits depuis des décennies dans ce paisible petit pays du Golfe, qui alarment les habitants.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260302-le-kowe%C3%AFt-aspir%C3%A9-malgr%C3%A9-lui-par-la-guerre-au-moyen-orient"
   },
   {
     "region": "moyen_orient",
-    "title": "Attaque américano-israélienne en Iran : \"C'est l'existence même du régime qui est en jeu\"",
-    "date": "Sat, 28 Feb 2026 15:21:28 GMT",
-    "content": "L'opération américano-israélienne contre l'Iran lancée samedi est d'une \"tout autre échelle\" que lors de la guerre déclenchée en juin dernier par Israël, a déclaré le chef d'état-major israélien. Cette fois, il s'agit de renverser la République islamique, au pouvoir depuis 1979 à Téhéran. Décryptage avec Joseph Bahout.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-attaque-%C3%A9tats-unis-isra%C3%ABl-iran-existence-m%C3%AAme-r%C3%A9gime-en-jeu"
+    "title": "La guerre contre l'Iran est \"juste\", dit l'ex-Premier ministre israélien Yaïr Lapid",
+    "date": "Mon, 02 Mar 2026 19:13:22 GMT",
+    "content": "L'ancien Premier ministre israélien Yaïr Lapid a accordé un entretien à France 24. Il affirme qu'il soutient l'offensive israélo-américaine contre l'Iran, bien qu'étant \"le plus grand rival de Netanyahu\". Qualifiant le conflit de \"guerre juste\", il estime que Téhéran a fait une erreur en attaquant les pays du Golfe, et que le conflit est devenu celui de \"toute la région contre l'Iran\".",
+    "url": "https://www.france24.com/fr/%C3%A9missions/en-t%C3%AAte-%C3%A0-t%C3%AAte/20260302-la-guerre-contre-l-iran-est-juste-dit-l-ex-premier-ministre-israelien-yair-lapid"
   },
   {
     "region": "moyen_orient",
-    "title": "L'ayatollah Ali Khamenei tué dans l'attaque israélo‑américaine, l'Iran décrète 40 jours de deuil",
-    "date": "Sat, 28 Feb 2026 13:11:21 GMT",
-    "content": "Le guide suprême iranien, l'ayatollah Ali Khamenei, a été tué samedi dans l'attaque d'Israël et des États-Unis contre l'Iran. Téhéran a riposté par des tirs de missiles et de drones contre Israël et les États du Golfe. Le principal responsable de la sécurité de l'Iran, Ali Larijani, a mis en garde dimanche contre les tentatives de division dans le pays.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-frappes-am%C3%A9ricaines-et-isra%C3%A9liennes-sur-l-iran-principaux-d%C3%A9veloppements"
+    "title": "Guerre au Moyen-Orient : le spectre d'un embrasement régional",
+    "date": "Mon, 02 Mar 2026 19:10:47 GMT",
+    "content": "Trois jours après le lancement de l'offensive israélo-américaine en Iran, la riposte iranienne s'intensifie. Des pays voisins tels que l'Arabie saoudite, Bahreïn et même Chypre ont été touchés. Au Liban, les combats sont repartis de plus belle entre Israël et le Hezbollah. De son côté, Donald Trump a annoncé qu'il n'excluait pas une intervention militaire au sol. La communauté internationale, qui observe la situation avec inquiétude, redoute désormais une guerre à grande échelle.",
+    "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20260302-guerre-au-moyen-orient-le-spectre-d-un-embrasement-r%C3%A9gional"
   },
   {
     "region": "moyen_orient",
-    "title": "Opération \"Fureur épique\" : focus sur l'armada américaine déployée au Moyen-Orient",
-    "date": "Sat, 28 Feb 2026 12:32:20 GMT",
-    "content": "Les États-Unis et Israël ont lancé samedi une opération conjointe contre l'Iran. L'opération \"Fureur épique\" était en préparation depuis des mois, en témoigne la présence d'une armada américaine rassemblée au Moyen-Orient. Le 19 février, France 24 avait fait le point sur cette puissance de feu inédite depuis la guerre en Irak.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-op%C3%A9ration-fureur-%C3%A9pique-focus-sur-armada-am%C3%A9ricaine-d%C3%A9ploy%C3%A9e-moyen-orient"
+    "title": "Le bombardement d'une école en Iran, cible d'intox",
+    "date": "Mon, 02 Mar 2026 18:48:30 GMT",
+    "content": "Une frappe présumée samedi contre une école de filles à Minab, dans une province du sud de l'Iran, est la cible d'une désinformation. Elle aurait causé la mort de 165 personnes, selon les autorités iraniennes.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260302-bombardement-une-ecole-en-iran-minab-cible-intox"
   },
   {
     "region": "moyen_orient",
-    "title": "Israël et les États-Unis frappent l'Iran : voici ce que l’on sait",
-    "date": "Sat, 28 Feb 2026 11:30:46 GMT",
-    "content": "Les États-Unis et Israël ont lancé, samedi, une campagne de frappes contre l'Iran, visant des dizaines de sites, notamment à Téhéran, Ispahan et Tabriz. Même le quartier abritant la résidence du guide suprême Ali Khamenei a été ciblée. La République islamique a répliqué en lançant des missiles vers des bases américaines situées en Irak, au Koweït, à Bahreïn, au Qatar, et aux Émirats. Voici ce que l’on sait.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-iran-israel-etats-unis-frappes-ce-que-l-on-sait-trump-teheran-khamenei"
+    "title": "Trump affirme que l'opération militaire en Iran est \"nettement en avance\" sur le calendrier prévu",
+    "date": "Mon, 02 Mar 2026 18:40:40 GMT",
+    "content": "Assurant que les États-Unis ont les capacités d'aller \"bien au-delà\" d'un mois de guerre contre l'Iran, Donald Trump a affirmé lundi que l'opération militaire était \"nettement en avance\" sur le calendrier prévu. Il s'est dit prêt à aller plus loin \"si nécessaire\", y compris en envoyant des troupes au sol.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260302-trump-operation-militaire-iran-nettement-avance-calendrier-prevu-guerre-moyen-orient"
   },
   {
     "region": "moyen_orient",
-    "title": "Afflux de réfugiés, crise pétrolière : quels risques au Moyen-Orient après l'attaque contre l'Iran ?",
-    "date": "Sat, 28 Feb 2026 10:41:13 GMT",
-    "content": "Des pays du Golfe au Pakistan en passant par la Turquie, les voisins de l'Iran redoutent les conséquences de l'opération \"Fureur épique\", lancée samedi par les États-Unis et Israël contre Téhéran.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-vagues-migratoires-r%C3%A9fugi%C3%A9s-crise-p%C3%A9troli%C3%A8re-quels-risques-moyen-orient-apr%C3%A8s-attaque-contre-iran"
+    "title": "Pourquoi l'Iran transforme \"l'oasis de prospérité et de stabilité\" Dubaï en \"zone de guerre\"",
+    "date": "Mon, 02 Mar 2026 17:47:49 GMT",
+    "content": "La République islamique iranienne, cible d’une double offensive israélo-américaine, semble concentrer ses représailles dans les pays du Golfe sur les Émirats arabes unis, visés quotidiennement depuis samedi par des missiles et des drones iraniens. Décryptage avec Karim Sader.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260302-iran-emirats-arabes-unis-dubai-oasis-stabilite-zone-guerre-etats-unis-trump-israel-guerre"
   },
   {
     "region": "moyen_orient",
-    "title": "Les Gardiens de la révolution promettent un \"châtiment sévère\" aux \"meurtriers\" d'Ali Khamenei",
-    "date": "Sat, 28 Feb 2026 06:24:30 GMT",
-    "content": "La télévision d'État iranienne a confirmé, au petit matin dimanche, la mort du guide suprême iranien Ali Khamenei, après une journée de puissantes frappes israéliennes et américaines en Iran. Le Croissant-Rouge iranien a dit avoir recensé au moins 201 morts et 747 blessés. L'ambassadeur iranien à l'ONU a dénoncé, devant le Conseil de sécurité, un \"crime de guerre\". Téhéran a commencé à riposter. Voici le fil du 28 févier 2026.",
-    "url": "https://www.france24.com/fr/moyen-orient/20260228-en-direct-isra%C3%ABl-lance-une-attaque-pr%C3%A9ventive-contre-l-iran-d%C3%A9cr%C3%A8te-l-%C3%A9tat-d-urgence"
+    "title": "Frappes en Iran : attaqué par Trump, Starmer répond au sujet de l'utilisation d'une base britannique",
+    "date": "Mon, 02 Mar 2026 17:30:00 GMT",
+    "content": "Le Premier ministre Keir Starmer a défendu sa décision, lundi, d'avoir d'abord interdit aux États-Unis d'utiliser la base militaire britannique de Diego Garcia, située dans l'océan Indien, pour frapper l'Iran. Plus tôt, le président américain Donald Trump l'avait accusé d'avoir tardé à autoriser l'accès à ce site stratégique.",
+    "url": "https://www.france24.com/fr/moyen-orient/20260302-frappes-en-iran-keir-starmer-assume-avoir-refus%C3%A9-l-usage-d-une-base-britannique-par-les-%C3%A9tats-unis-guerre-moyen-orient"
   }
 ]
