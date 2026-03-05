@@ -40,4 +40,3 @@ print("news.json créé avec succès !")
 
 print("Envoi des données à l'API de vectorisation...")
 
-

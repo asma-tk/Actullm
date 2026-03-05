@@ -1,89 +1,150 @@
 import streamlit as st
-import time, random
+import requests
 
-st.set_page_config(page_title="Ok Kévin", page_icon="📰", layout="centered")
+st.set_page_config(page_title="Ok Kévin", page_icon="📰", layout="wide")
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+# ── Chargement du CSS externe ──────────────────────────────────
+with open("style.css", "r", encoding="utf-8") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-html, body, [data-testid="stApp"], .main, .block-container {
-    background: #ffffff !important;
-}
-#MainMenu, footer, [data-testid="stHeader"] { display: none !important; }
-.block-container { max-width: 800px !important; padding: 2rem !important; }
+# ── Config APIs ────────────────────────────────────────────────
+# FRONT → api_front (8002) → C3 (8004) → ChromaDB (8003) → LLM (8005)
+API_FRONT = "http://localhost:8002/ask"
+API_LLM   = "http://localhost:8005/generate"
 
-[data-testid="stChatMessage"] {
-    background: #f8f9fa !important;
-    border: 1px solid #e9ecef !important;
-    border-radius: 12px !important;
-    margin-bottom: 8px !important;
-}
-[data-testid="stChatMessage"] p {
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: .82rem !important;
-    line-height: 1.75 !important;
-}
+MODELS = ["mistral", "llama3", "ChatGPT"]  # Liste des modèles disponibles dans Ollam
+
+# ── Session state ──────────────────────────────────────────────
+if "model"          not in st.session_state: st.session_state.model          = "mistral"
+if "rag_messages"   not in st.session_state: st.session_state.rag_messages   = []
+if "norag_messages" not in st.session_state: st.session_state.norag_messages = []
 
 
-</style>
+# ── API calls ──────────────────────────────────────────────────
+def ask_with_rag(question: str, model: str):
+    """
+    Avec RAG :
+    FRONT → api_front (8002) → C3 (8004) → ChromaDB (8003) ↓ build_prompt ↓ LLM (8005)
+    """
+    try:
+        r = requests.post(
+            API_FRONT,
+            json={"question": question, "mode": "rag", "model": model},
+            timeout=120,
+        )
+        r.raise_for_status()
+        data = r.json()
+        return data.get("answer", "—"), data.get("sources", [])
+    except requests.exceptions.ConnectionError:
+        return "❌ api_front (8002) non joignable.", []
+    except requests.exceptions.Timeout:
+        return "⏱️ Timeout — le LLM prend trop de temps.", []
+    except Exception as e:
+        return f"❌ Erreur : {e}", []
+
+
+def ask_without_rag(question: str, model: str):
+    """
+    Sans RAG :
+    Prompt direct → LLM (8005) — aucun contexte documentaire
+    """
+    prompt = (
+        "Tu es un assistant journaliste. "
+        "Réponds en français à la question suivante "
+        "sans contexte documentaire supplémentaire.\n\n"
+        f"Question : {question}\nRéponse :"
+    )
+    try:
+        r = requests.post(
+            API_LLM,
+            json={"model": model, "prompt": prompt},
+            timeout=120,
+        )
+        r.raise_for_status()
+        return r.json().get("response", "—")
+    except requests.exceptions.ConnectionError:
+        return "❌ LLM Gateway (8005) non joignable."
+    except requests.exceptions.Timeout:
+        return "⏱️ Timeout — le LLM prend trop de temps."
+    except Exception as e:
+        return f"❌ Erreur : {e}"
+
+
+# ── Header ─────────────────────────────────────────────────────
+st.markdown('<h1 class="masthead">Ok Kévin, quoi de neuf ?</h1>', unsafe_allow_html=True)
+st.markdown('<p class="tagline">Discuter des dernières actualités · RAG · France 24</p>', unsafe_allow_html=True)
+
+# ── Sélecteur de modèle (partagé, au-dessus des 2 chats) ──────
+st.markdown(f"""
+<div class="model-bar">
+  <span class="model-lbl">Modèle actif</span>
+  <span class="model-name">⬡ {st.session_state.model}</span>
+</div>
 """, unsafe_allow_html=True)
 
-# ── Mock data ──────────────────────────────────────────────────
-ARTICLES = [
-    {"region": "europe",       "title": "Sommet UE : accord sur la migration",      "date": "02 mars 2026", "content": "Les 27 s'accordent sur la répartition des migrants après deux jours de négociations à Bruxelles."},
-    {"region": "afrique",      "title": "Sénégal : participation record 72%",        "date": "02 mars 2026", "content": "Les Sénégalais se rendent aux urnes en masse pour les législatives."},
-    {"region": "moyen_orient", "title": "Cessez-le-feu : nouvelle session à Doha",  "date": "01 mars 2026", "content": "Médiation américaine et qatarie pour tenter de mettre fin aux hostilités."},
-    {"region": "asie",         "title": "Japon : plan de relance 50 milliards",     "date": "01 mars 2026", "content": "Tokyo annonce un plan massif pour soutenir l'économie nationale."},
-    {"region": "ameriques",    "title": "Brésil : tensions sur la réforme fiscale", "date": "28 fév. 2026", "content": "Le Parlement est divisé sur la réforme fiscale du gouvernement Lula."},
-]
-KEYS = {
-    "europe":       ["europe", "france", "ue"],
-    "afrique":      ["afrique", "sénégal", "mali"],
-    "moyen_orient": ["moyen-orient", "doha", "israël"],
-    "asie":         ["asie", "japon", "chine"],
-    "ameriques":    ["brésil", "amérique", "lula"],
-}
+cols_btn = st.columns(len(MODELS))
+for i, m in enumerate(MODELS):
+    with cols_btn[i]:
+        label = f"✦ {m}" if m == st.session_state.model else m
+        if st.button(label, key=f"btn_{m}", use_container_width=True):
+            st.session_state.model = m
+            st.rerun()
 
-def ask_kevin(question):
-    # 👉 Remplacer par LangChain + ChromaDB + Mistral quand prêt
-    time.sleep(0.8)
-    q = question.lower()
-    top3 = sorted(ARTICLES,
-        key=lambda a: random.uniform(.5,.65) + (.3 if any(k in q for k in KEYS[a["region"]]) else 0),
-        reverse=True)[:3]
-    answer = "\n\n".join(f"**{a['title']}** ({a['region']}, {a['date']}) : {a['content']}" for a in top3)
-    answer += "\n\n> *Mode démo — connecte Ollama + ChromaDB pour le vrai RAG*"
-    sources = [{"title": a["title"], "region": a["region"], "date": a["date"]} for a in top3]
-    return answer, sources
+st.markdown("<hr style='border:1px solid #1e1e1e; margin:1rem 0 1.5rem'>", unsafe_allow_html=True)
 
-# ── UI ─────────────────────────────────────────────────────────
-st.title("📰 Ok Kévin, quoi de neuf ?")
-st.caption("posez votre question")
-st.divider()
+# ── Deux colonnes ──────────────────────────────────────────────
+col_rag, col_norag = st.columns(2)
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
+# ── Colonne gauche : AVEC RAG ──────────────────────────────────
+with col_rag:
+    st.markdown('<span class="col-badge badge-rag">⚡ Avec RAG</span>', unsafe_allow_html=True)
 
-for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-        if msg.get("sources"):
-            with st.expander(f"📎 {len(msg['sources'])} source(s)"):
-                for s in msg["sources"]:
-                    st.caption(f"**{s['title']}** · {s['region']} · {s['date']}")
+    # Zone scrollable des messages
+    chat_rag = st.container(height=500)
+    with chat_rag:
+        for msg in st.session_state.rag_messages:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+                if msg.get("sources"):
+                    with st.expander(f" {len(msg['sources'])} source(s)"):
+                        for s in msg["sources"]:
+                            st.caption(f"**{s.get('title','')}** · {s.get('region','')} · {s.get('date','')} · {s.get('url','')}")
 
-if prompt := st.chat_input("Alors Kévin, quoi de neuf ?"):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
+    # Input collé en bas
+    if prompt := st.chat_input("Kévin, quoi de neuf dans le monde ?", key="input_rag"):
+        st.session_state.rag_messages.append({"role": "user", "content": prompt})
+        with chat_rag:
+            with st.chat_message("user"):
+                st.markdown(prompt)
+            with st.chat_message("assistant"):
+                with st.spinner(f"Recherche dans ChromaDB + {st.session_state.model}…"):
+                    answer, sources = ask_with_rag(prompt, st.session_state.model)
+                st.markdown(answer)
+                if sources:
+                    with st.expander(f" {len(sources)} source(s)"):
+                        for s in sources:
+                            st.caption(f"**{s.get('title','')}** · {s.get('region','')} · {s.get('date','')} · {s.get('url','')}")
+        st.session_state.rag_messages.append({"role": "assistant", "content": answer, "sources": sources})
 
-    with st.chat_message("assistant"):
-        with st.spinner("Kévin consulte ses sources..."):
-            answer, sources = ask_kevin(prompt)
-        st.markdown(answer)
-        with st.expander(f"📎 {len(sources)} source(s)"):
-            for s in sources:
-                st.caption(f"**{s['title']}** · {s['region']} · {s['date']}")
+# ── Colonne droite : SANS RAG ──────────────────────────────────
+with col_norag:
+    st.markdown('<span class="col-badge badge-norag">○ Sans RAG</span>', unsafe_allow_html=True)
 
-    st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources})
+    # Zone scrollable des messages
+    chat_norag = st.container(height=500)
+    with chat_norag:
+        for msg in st.session_state.norag_messages:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+
+    # Input collé en bas
+    if prompt := st.chat_input("Kévin, quoi de neuf dans le monde ?", key="input_norag"):
+        st.session_state.norag_messages.append({"role": "user", "content": prompt})
+        with chat_norag:
+            with st.chat_message("user"):
+                st.markdown(prompt)
+            with st.chat_message("assistant"):
+                with st.spinner(f"{st.session_state.model} répond sans contexte…"):
+                    answer = ask_without_rag(prompt, st.session_state.model)
+                st.markdown(answer)
+        st.session_state.norag_messages.append({"role": "assistant", "content": answer})
