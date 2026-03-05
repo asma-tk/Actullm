@@ -1,43 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-html, body, [data-testid="stApp"] { background: #ffffff !important; }
+html, body, [data-testid="stApp"], .main, .block-container {
+    background: linear-gradient(135deg, #1a0a0f 0%, #2d1020 50%, #1a0a1a 100%) !important;
+    color: #ffffff !important;
+}
+
+* { color: #ffffff; }
 #MainMenu, footer, [data-testid="stHeader"] { display: none !important; }
-.block-container { max-width: 720px !important; padding: 2rem !important; }
+.block-container { max-width: 1400px !important; padding: 1.5rem 2rem !important; }
 
-h1 {
+/* ── Header ── */
+h1.masthead {
     font-family: 'Playfair Display', serif !important;
     font-size: 3rem !important;
-    color: #1A1A1A !important;
-    border-bottom: 5px solid #ff30c4;
-    padding-bottom: 8px;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1;
 }
-.sub {
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    color: #888;
-    letter-spacing: 2px;
+.tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: #ffffff;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
+/* ── Model bar ── */
+.model-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 10px 18px;
+    margin: 1rem 0 0.5rem;
+    height: 60px;
+}
+.model-lbl  { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #f7f2f2; }
+.model-name { font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600; color: #ff3366; }
+
+/* ── Column headers ── */
+.col-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.badge-rag   { background: #090909; color: #fffefe; }
+.badge-norag { background: #1a1a1a; color: #f4f0f0; border: 1px solid #2a2a2a; }
+
+/* ── Chat messages ── */
 [data-testid="stChatMessage"] {
-    background: white !important;
-    border: 2px solid #1A1A1A !important;
-    border-left: 5px solid #581045 !important;
-    border-radius: 25px  !important;
-    height: 50px !important;
-    font-family: 'Space Mono', monospace !important;
+    background: #0d0d0d !important;
+    border: 1px solid #222 !important;
+    border-radius: 8px !important;
+    margin-bottom: 6px !important;
 }
-[data-testid="stChatMessage"][data-testid*="user"] {
-    border-left: 5px solid #1A1A1A !important;
-    background: #1A1A1A !important;
-   
+[data-testid="stChatMessage"] p,
+[data-testid="stChatMessage"] span,
+[data-testid="stChatMessage"] div,
+[data-testid="stChatMessage"] li {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: .78rem !important;
+    line-height: 1.85 !important;
+    color: #ffffff !important;
 }
-[data-testid="stChatInput"] > div {
-    border: 2px solid #1A1A1A !important;
-    border-radius: 25pxS !important;
-    background: white !important;
-        height: 50px !important;
 
+/* ── Chat input — collé en bas, plus grand ── */
+[data-testid="stChatInput"] > div {
+    background: #111 !important;
+    border: 1px solid #2a2a2a !important;
+    border-radius: 12px !important;
 }
-[data-testid="stChatInput"] button { background: #841780 !important; border-radius: 25pxS !important; }
+[data-testid="stChatInput"] textarea {
+    background: #000000 !important;
+    color: #ffffff !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 1rem !important;
+    min-height: 60px !important;
+    padding: 14px !important;
+}
+[data-testid="stChatInput"] button {
+    background: #ff3366 !important;
+    border-radius: 8px !important;
+    width: 44px !important;
+    height: 44px !important;
+}
+
+/* ── Expander ── */
+[data-testid="stExpander"] {
+    background: #0d0d0d !important;
+    border: 1px solid #1e1e1e !important;
+    border-radius: 6px !important;
+}
+
+/* ── Column separator ── */
+div[data-testid="column"]:first-child { border-right: 1px solid #1e1e1e; padding-right: 2rem; }
+div[data-testid="column"]:last-child  { padding-left: 2rem; }
+
+/* ── Model buttons ── */
+div[data-testid="stHorizontalBlock"] button {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 11px !important;
+    border-radius: 6px !important;
+    border: 1px solid #2a2a2a !important;
+    background: #111 !important;
+    color: #555 !important;
+}
+div[data-testid="stHorizontalBlock"] button:hover {
+    border-color: #ff3366 !important;
+    color: #ff3366 !important;
+}

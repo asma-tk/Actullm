@@ -7,9 +7,9 @@ from chromadb.config import Settings
 import requests
 from defconn import connect_collection
 
-# embeddings = HuggingFaceEmbeddings(
-#     model_name="sentence-transformers/all-MiniLM-L6-v2"
-# )
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 response = requests.get("http://0.0.0.0:8001/get_articles")
 articles = response.json()
 
@@ -26,24 +26,18 @@ for article in articles:
     )
     documents.append(doc)
 
-
-
 splitter = CharacterTextSplitter(
     chunk_size=500,
     chunk_overlap=50
 )
 chunked_docs = splitter.split_documents(documents)
 
-
-
-# vectorstore = FAISS.from_documents(
-#     chunked_docs,
-#     embeddings
-#  )
+vectorstore = FAISS.from_documents(
+    chunked_docs,
+    embeddings
+)
 
 collection = connect_collection()
-
-
 
 ids = []
 embeddings_list = []
@@ -51,23 +45,15 @@ documents_list = []
 metadatas_list = []
 
 for i, chunk in enumerate(chunked_docs):
-    #embedding = vectorstore.index.reconstruct(i).tolist()
+    embedding = vectorstore.index.reconstruct(i).tolist()
     ids.append(str(i))
-    #embeddings_list.append(embedding)
+    embeddings_list.append(embedding)
     documents_list.append(chunk.page_content)
     metadatas_list.append(chunk.metadata)
 
-collection.upsert(
+collection.add(
     ids=ids,
-    #embeddings=embeddings_list,
+    embeddings=embeddings_list,
     documents=documents_list,
     metadatas=metadatas_list
 )
-
-
-
-documents = collection.query(query_texts=["question"])
-
-
-
-print(documents)
