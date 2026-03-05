@@ -5,19 +5,6 @@ services:
     build: .
     ports:
       - "8001:8001"
-    restart: no
-
+    restart: always
     volumes:
       - .:/app
-
-  chromadb:
-    image: chromadb/chroma:1.5.2
-    volumes:
-      - ./chroma-data:/data
-    ports:
-      - "8000:8000"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v2/heartbeat"]
-      interval: 30s
-      timeout: 10s
-      retries: 3

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Space+Mono&display=swap');
+
+html, body, [data-testid="stApp"] { background: #ffffff !important; }
+#MainMenu, footer, [data-testid="stHeader"] { display: none !important; }
+.block-container { max-width: 720px !important; padding: 2rem !important; }
+
+h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3rem !important;
+    color: #1A1A1A !important;
+    border-bottom: 5px solid #ff30c4;
+    padding-bottom: 8px;
+}
+.sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+[data-testid="stChatMessage"] {
+    background: white !important;
+    border: 2px solid #1A1A1A !important;
+    border-left: 5px solid #581045 !important;
+    border-radius: 25px  !important;
+    height: 50px !important;
+    font-family: 'Space Mono', monospace !important;
+}
+[data-testid="stChatMessage"][data-testid*="user"] {
+    border-left: 5px solid #1A1A1A !important;
+    background: #1A1A1A !important;
+   
+}
+[data-testid="stChatInput"] > div {
+    border: 2px solid #1A1A1A !important;
+    border-radius: 25pxS !important;
+    background: white !important;
+        height: 50px !important;
+
+}
+[data-testid="stChatInput"] button { background: #841780 !important; border-radius: 25pxS !important; }
