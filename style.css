@@ -40,22 +40,22 @@ h1.masthead {
     margin: 1rem 0 0.5rem;
     height: 60px;
 }
-.model-lbl  { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #f7f2f2; }
+.model-lbl  { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #444; }
 .model-name { font-family: 'IBM Plex Mono', monospace; font-size: 18px; font-weight: 600; color: #ff3366; }
 
 /* ── Column headers ── */
 .col-badge {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    padding: 10px 22px;
+    padding: 5px 12px;
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 4px;
 }
-.badge-rag   { background: #090909; color: #fffefe; }
-.badge-norag { background: #1a1a1a; color: #f4f0f0; border: 1px solid #2a2a2a; }
+.badge-rag   { background: #ff3366; color: #000; }
+.badge-norag { background: #1a1a1a; color: #666; border: 1px solid #2a2a2a; }
 
 /* ── Chat messages ── */
 [data-testid="stChatMessage"] {
@@ -72,6 +72,32 @@ h1.masthead {
     font-size: .78rem !important;
     line-height: 1.85 !important;
     color: #ffffff !important;
+}
+
+/* ── Avatars ── */
+[data-testid="stChatMessage"] [data-testid="chatAvatarIcon-user"],
+[data-testid="stChatMessage"] [data-testid="chatAvatarIcon-assistant"] {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    border-radius: 8px !important;
+    background: #1a1a1a !important;
+    border: 1px solid #333 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+[data-testid="chatAvatarIcon-user"] svg,
+[data-testid="chatAvatarIcon-user"] img,
+[data-testid="chatAvatarIcon-assistant"] svg,
+[data-testid="chatAvatarIcon-assistant"] img {
+    filter: brightness(0) invert(1) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+[data-testid="chatAvatarIcon-user"] > *:not(svg):not(img),
+[data-testid="chatAvatarIcon-assistant"] > *:not(svg):not(img) {
+    display: none !important;
 }
 
 /* ── Chat input — collé en bas, plus grand ── */
