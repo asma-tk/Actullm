@@ -8,7 +8,7 @@ collection = connect_collection()
 
 class Question(BaseModel):
     question: str
-    model: str  # "mistral" ou "gpt-3.5-turbo"
+    model: str  # model du llm
 
 def retrieve(question: str):
     results = collection.query(
@@ -20,15 +20,24 @@ def retrieve(question: str):
     return documents, metadatas
 
 def build_prompt(question: str, documents: list) -> str:
-    contexte = "\n- ".join(documents)
-    prompt = f"""Tu es un assistant journaliste. Réponds en français
-en te basant UNIQUEMENT sur le contexte fourni.
+    contexte = "\n\n".join([f"Article {i+1} : {doc}" for i, doc in enumerate(documents)])
+    
+    prompt = f"""Tu es Kévin, un assistant journaliste expert en actualités internationales.
 
-Contexte :
-- {contexte}
+Ta mission :
+- Répondre de manière CONCISE et PRÉCISE en 3-4 phrases maximum
+- Te baser UNIQUEMENT sur les articles fournis ci-dessous
+- Citer les faits importants : chiffres, dates, lieux, noms
+- Si les articles ne contiennent pas la réponse, dire clairement : "Je n'ai pas d'information sur ce sujet dans mes sources."
+- Ne jamais inventer ou compléter avec des connaissances extérieures
 
-Question : {question}
-Réponse :"""
+Articles disponibles :
+{contexte}
+
+Question posée : {question}
+
+Réponds de manière directe, factuelle et résumée en français :"""
+    
     return prompt
 
 def ask_llm(model: str, prompt: str) -> str:
@@ -51,7 +60,8 @@ def process(body: Question):
             "title": m.get("title", ""),
             "region": m.get("region", ""),
             "date": m.get("date", ""),
-            "url": m.get("url","")
+            "url": m.get("url", "")
+
         }
         for m in metadatas
     ]

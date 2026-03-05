@@ -1,6 +1,17 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import httpx
+import os
+from openai import AzureOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+
+azur_client = AzureOpenAI(
+    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
+    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+)
 
 # --- App FastAPI ---
 app = FastAPI()
@@ -18,6 +29,22 @@ async def generate(req: GenerateRequest):
     -> envoie à Ollama
     -> renvoie {response}
     """
+
+    # --- CAS AZURE GPT ---
+    if req.model == "ChatGPT":
+
+        response = azur_client.chat.completions.create(
+            model=os.getenv("AZURE_OPENAI_DEPLOYMENT"),
+            messages=[
+                {"role": "user", "content": req.prompt}
+            ],
+            temperature=0.2
+        )
+
+        return {
+            "response": response.choices[0].message.content
+        }
+# si oalama
     try:
         async with httpx.AsyncClient(timeout=120) as client:
             r = await client.post(
