@@ -35,3 +35,5 @@ id_ed25519.pub
 
 # erreurs possibles (fichiers clés commités par accident)
 ssh-keygen*
+
+.env

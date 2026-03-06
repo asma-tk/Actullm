@@ -7,10 +7,8 @@ from chromadb.config import Settings
 import requests
 from defconn import connect_collection
 
-# embeddings = HuggingFaceEmbeddings(
-#     model_name="sentence-transformers/all-MiniLM-L6-v2"
-# )
-response = requests.get("http://0.0.0.0:8001/get_articles")
+
+response = requests.get("http://localhost:8001/get_articles")
 articles = response.json()
 
 documents = []
@@ -36,10 +34,7 @@ chunked_docs = splitter.split_documents(documents)
 
 
 
-# vectorstore = FAISS.from_documents(
-#     chunked_docs,
-#     embeddings
-#  )
+
 
 collection = connect_collection()
 
@@ -63,11 +58,3 @@ collection.upsert(
     documents=documents_list,
     metadatas=metadatas_list
 )
-
-
-
-documents = collection.query(query_texts=["question"])
-
-
-
-print(documents)
