@@ -3,25 +3,28 @@ import requests
 
 st.set_page_config(page_title="Ok Kévin", page_icon="📰", layout="wide")
 
-# ── Chargement du CSS externe ──────────────────────────────────
-with open("style.css", "r", encoding="utf-8") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# # ── Chargement du CSS externe ──────────────────────────────────
+# with open("style.css", "r", encoding="utf-8") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # ── Avatars ────────────────────────────────────────────────────
 AVATAR_USER = "https://api.dicebear.com/7.x/initials/svg?seed=U&backgroundColor=1a1a1a&textColor=ffffff&fontSize=40"
 AVATAR_BOT  = "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=kevin&backgroundColor=1a1a1a"
 
+
+
+
 # ── Config APIs ────────────────────────────────────────────────
 # FRONT → api_front (8002) → C3 (8004) → ChromaDB (8003) → LLM (8005)
-API_FRONT = "http://localhost:8002/ask"
+API_FRONT = "http://localhost:8002/ask" #
 API_LLM   = "http://localhost:8005/generate"
 
 MODELS = ["mistral", "llama3", "ChatGPT"]  # Liste des modèles disponibles dans Ollama
 
 # ── Session state ──────────────────────────────────────────────
-if "model"          not in st.session_state: st.session_state.model          = "mistral"
-if "rag_messages"   not in st.session_state: st.session_state.rag_messages   = []
-if "norag_messages" not in st.session_state: st.session_state.norag_messages = []
+if "model"          not in st.session_state: st.session_state.model          = "mistral" # Modèle par défaut
+if "rag_messages"   not in st.session_state: st.session_state.rag_messages   = []# Liste pour stocker les messages de la colonne AVEC RAG
+if "norag_messages" not in st.session_state: st.session_state.norag_messages = []# Liste pour stocker les messages de la colonne SANS RAG
 
 
 # ── API calls ──────────────────────────────────────────────────
@@ -32,13 +35,14 @@ def ask_with_rag(question: str, model: str):
     """
     try:
         r = requests.post(
-            API_FRONT,
+            API_FRONT, #    On envoie la question et le modèle choisi à l'API FRONT (8002) qui va orchestrer les appels à C3, ChromaDB et LLM Gateway
             json={"question": question, "mode": "rag", "model": model},
             timeout=120,
         )
         r.raise_for_status()
         data = r.json()
         return data.get("answer", "—"), data.get("sources", [])
+    
     except requests.exceptions.ConnectionError:
         return "❌ api_front (8002) non joignable.", []
     except requests.exceptions.Timeout:
@@ -60,8 +64,8 @@ def ask_without_rag(question: str, model: str):
     )
     try:
         r = requests.post(
-            API_LLM,
-            json={"model": model, "prompt": prompt},
+        API_LLM, #
+            json={"model": model, "prompt": prompt}, # On envoie le prompt directement au LLM Gateway (8005) sans passer par api_front (8002) ni C3 (8004) ni ChromaDB (8003)
             timeout=120,
         )
         r.raise_for_status()
@@ -103,21 +107,21 @@ col_rag, col_norag = st.columns(2)
 with col_rag:
     st.markdown('<span class="col-badge badge-rag">⚡ Avec RAG</span>', unsafe_allow_html=True)
 
-    chat_rag = st.container(height=500)
+    chat_rag = st.container()
     with chat_rag:
-        for msg in st.session_state.rag_messages:
+        for msg in st.session_state.rag_messages: # Parcourir les messages de la session state pour la colonne RAG
             av = AVATAR_USER if msg["role"] == "user" else AVATAR_BOT
             with st.chat_message(msg["role"], avatar=av):
                 st.markdown(msg["content"])
                 if msg.get("sources"):
-                    with st.expander(f" {len(msg['sources'])} source(s)"):
+                    with st.expander(f" {len(msg['sources'])} source(s)"): # Si le message contient des sources, on affiche un expander avec le nombre de sources
                         for s in msg["sources"]:
                             url = s.get("url", "")
                             title  = s.get("title", "—")
                             region = s.get("region", "")
                             date   = s.get("date", "")
                             if url:
-                                st.markdown(f"**{title}** — {region} — {date}  \n🔗 [{url}]({url})")
+                                st.markdown(f"**{title}** — {region} — {date}  \n🔗 [{url}]({url})") #
                             else:
                                 st.caption(f"{title} — {region} — {date}")
 
@@ -147,10 +151,10 @@ with col_rag:
 with col_norag:
     st.markdown('<span class="col-badge badge-norag">○ Sans RAG</span>', unsafe_allow_html=True)
 
-    chat_norag = st.container(height=500)
+    chat_norag = st.container()
     with chat_norag:
         for msg in st.session_state.norag_messages:
-            av = AVATAR_USER if msg["role"] == "user" else AVATAR_BOT
+            av = AVATAR_USER if msg["role"] == "user" else AVATAR_BOT 
             with st.chat_message(msg["role"], avatar=av):
                 st.markdown(msg["content"])
 
@@ -159,8 +163,8 @@ with col_norag:
         with chat_norag:
             with st.chat_message("user", avatar=AVATAR_USER):
                 st.markdown(prompt)
-            with st.chat_message("assistant", avatar=AVATAR_BOT):
-                with st.spinner(f"{st.session_state.model} répond sans contexte…"):
-                    answer = ask_without_rag(prompt, st.session_state.model)
+            with st.chat_message("assistant", avatar=AVATAR_BOT): # On affiche la réponse du LLM dans un message de rôle "assistant" avec l'avatar du bot
+                with st.spinner(f"{st.session_state.model} répond sans contexte…"): # Affichage d'un spinner pendant l'appel à l'API pour indiquer que le LLM est en train de générer une réponse
+                    answer = ask_without_rag(prompt, st.session_state.model) # Appel à l'API LLM Gateway (8005) en mode sans RAG
                 st.markdown(answer)
-        st.session_state.norag_messages.append({"role": "assistant", "content": answer})
+        st.session_state.norag_messages.append({"role": "assistant", "content": answer})# On stocke la réponse du LLM dans la session state pour qu'elle persiste à l'écran

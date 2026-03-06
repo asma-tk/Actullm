@@ -51,7 +51,7 @@ def process(body: Question):
             "title": m.get("title", ""),
             "region": m.get("region", ""),
             "date": m.get("date", ""),
-            "url": m.get("url", "") 
+            "url": m.get("url","")
         }
         for m in metadatas
     ]

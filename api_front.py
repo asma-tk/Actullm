@@ -6,7 +6,7 @@ app = FastAPI()
 
 class Question(BaseModel):
     question: str
-    mode: str
+    model: str
 
 @app.post("/ask")
 def ask(body: Question):
@@ -14,7 +14,7 @@ def ask(body: Question):
         "http://localhost:8004/process",
         json={
             "question": body.question,
-            "mode": body.mode
+            "model": body.model
         }
     )
     return response.json()

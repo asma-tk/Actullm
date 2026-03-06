@@ -18,16 +18,22 @@ all_articles: List[Article] = []
 
 
 with open("news.json", "r", encoding="utf-8") as f:
-    data_articles = json.load(f)
-    all_articles = [Article(**article) for article in data_articles]
+    data_articles = json.load(f) # Charger les articles depuis le fichier JSON
+    all_articles = [Article(**article) for article in data_articles] # Convertir les dictionnaires en instances de la classe Article
 
+#print(f"DEBUG: Loaded {len(all_articles)} articles from news.json")
 @app.post("/get_articles")
-def add_articles(articles: List[Article]):
-    global all_articles # Ensure we are targeting the global list
-    all_articles.extend(articles)
+def add_articles(articles: List[Article]):      
+    global all_articles 
+    all_articles.extend(articles)          #all_articles = anciens_articles + nouveaux_articles
+
+ 
+    
     print(f"DEBUG: Received {len(articles)} articles. Total now: {len(all_articles)}")
     return {"status": "succès", "articles_reçus": len(articles)}
 
+
+# Endpoint pour récupérer tous les articles stockés
 @app.get("/get_articles", response_model=List[Article])
 def get_articles():
     return all_articles

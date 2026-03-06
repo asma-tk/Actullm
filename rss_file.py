@@ -1,7 +1,6 @@
 import feedparser  #rss_file.py
 import json
 import re
-import requests # Nécessaire pour envoyer les données à la collègue
 
 feeds = {
     
@@ -15,15 +14,15 @@ feeds = {
 def clean(text): 
     return re.sub(r"<.*?>", "", text or "").strip()
 
-articles = [] 
+articles = []  #Liste pour stocker les articles extraits de tous les flux RSS
 
 # --- ÉTAPE C1 : RÉCUPÉRATION ---
-for region, url in feeds.items(): 
-    print(f"Récupération : {region}...")
-    feed = feedparser.parse(url)
+for region, url in feeds.items():                         # Parcourir chaque région et son URL de flux RSS
+    print(f"Récupération : {region}...")   # Afficher la région en cours de traitement
+    feed = feedparser.parse(url)          # Récupérer et parser le flux RSS de la région actuelle
     
-    # Correction de l'indentation ici pour parcourir TOUTES les régions
-    for entry in feed.entries:  
+    
+    for entry in feed.entries:     # Parcourir chaque article (entry) dans le flux RSS
         articles.append({
             "region": region,
             "title": entry.get("title"),
@@ -39,5 +38,4 @@ with open("news.json", "w", encoding="utf-8") as f:
 print("news.json créé avec succès !")
 
 print("Envoi des données à l'API de vectorisation...")
-
 
