@@ -5,7 +5,7 @@ It ingests France 24 RSS news, stores vectors in ChromaDB, and queries an LLM th
 
 ## Demo
 
-![ActuLLM Demo](rag.gif)
+![ActuLLM Demo](demmo.gif)
 
 ## Features
 
