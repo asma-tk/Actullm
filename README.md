@@ -5,9 +5,8 @@ It ingests France 24 RSS news, stores vectors in ChromaDB, and queries an LLM th
 
 ## Demo
 
-## 🎬 Demo
+![ActuLLM Demo](demo-rag.gif)
 
-![ActuLLM RAG Demo](demo-rag.gif)
 ## Features
 
 - News ingestion from France 24 RSS feeds (`rss_file.py`)
